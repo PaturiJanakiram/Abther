@@ -1,0 +1,81 @@
+src/
+│
+├── assets/
+│   ├── images/
+│   ├── icons/
+│   └── logo/
+│
+├── components/
+│   ├── Layout/
+│   │   ├── Navbar.jsx
+│   │   ├── Footer.jsx
+│   │   └── ScrollToTop.jsx
+│   │
+│   ├── Hero/
+│   │   ├── Hero.jsx
+│   │   ├── HeroStats.jsx
+│   │   └── FloatingCards.jsx
+│   │
+│   ├── About/
+│   │   ├── About.jsx
+│   │   ├── CultureCard.jsx
+│   │   ├── ValueCard.jsx
+│   │   └── MissionVision.jsx
+│   │
+│   ├── Platforms/
+│   │   ├── PlatformCard.jsx
+│   │   ├── Diagnostics.jsx
+│   │   ├── Therapeutics.jsx
+│   │   └── FeaturesList.jsx
+│   │
+│   ├── Process/
+│   │   └── HowItWorks.jsx
+│   │
+│   ├── Team/
+│   │   ├── CEO.jsx
+│   │   ├── TeamGrid.jsx
+│   │   └── Advisors.jsx
+│   │
+│   ├── Investors/
+│   │   ├── Investors.jsx
+│   │   ├── Roadmap.jsx
+│   │   └── Grants.jsx
+│   │
+│   ├── Contact/
+│   │   ├── Contact.jsx
+│   │   └── ContactForm.jsx
+│   │
+│   └── Common/
+│       ├── Button.jsx
+│       ├── SectionTitle.jsx
+│       ├── Card.jsx
+│       └── Container.jsx
+│
+├── pages/
+│   └── Home.jsx
+│
+├── App.jsx
+└── main.jsx
+
+-----------
+styles/
+
+global.css
+
+navbar.css
+
+hero.css
+
+about.css
+
+platforms.css
+
+team.css
+
+investors.css
+
+contact.css
+
+footer.css
+
+responsive.css

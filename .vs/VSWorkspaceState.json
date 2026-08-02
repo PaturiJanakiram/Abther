@@ -2,8 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\src",
+    "\\src\\assets",
+    "\\src\\assets\\images",
     "\\src\\components",
-    "\\src\\css"
+    "\\src\\components\\About",
+    "\\src\\components\\Layout",
+    "\\src\\images"
   ],
   "PreviewInSolutionExplorer": false
 }

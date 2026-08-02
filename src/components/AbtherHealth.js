@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import '../css/AbtherHealth.css'
 import AbtherLogo from '../images/AbtherLogo.JPG'
 import AbtherHealthImg from '../images/Menu.jpg'
@@ -65,5 +65,3 @@ function AbtherHealth() {
 }
 
 export default AbtherHealth;
-
-//blank line
