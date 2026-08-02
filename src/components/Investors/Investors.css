@@ -1,0 +1,168 @@
+/*=================================
+INVESTORS
+==================================*/
+
+.investors,
+.roadmap,
+.grants {
+    padding: 100px 0;
+}
+
+.investors {
+    background: #fff;
+}
+
+.roadmap {
+    background: #f8fbfd;
+}
+
+.grants {
+    padding-top: 40px;
+    padding-bottom: 100px;
+    background: #fff;
+}
+
+/*=================================
+INVESTOR CARDS
+==================================*/
+
+.investor-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.investor-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+    .investor-card:hover {
+        transform: translateY(-8px);
+    }
+
+    .investor-card h3 {
+        color: #0A2540;
+        margin-bottom: 15px;
+    }
+
+    .investor-card p {
+        color: #6B7280;
+        line-height: 1.8;
+    }
+
+/*=================================
+ROADMAP
+==================================*/
+
+.roadmap-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+
+.roadmap-card {
+    background: white;
+    border-top: 5px solid #0E7C7B;
+    border-radius: 18px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+    .roadmap-card h3 {
+        color: #0E7C7B;
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .roadmap-card h4 {
+        color: #0A2540;
+        margin-bottom: 12px;
+    }
+
+    .roadmap-card p {
+        color: #6B7280;
+        line-height: 1.7;
+    }
+
+/*=================================
+TRUST SECTION
+==================================*/
+
+.trust {
+    background: #ffffff;
+    border: 1px solid #e8eef4;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.06);
+}
+
+.trust-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.trust-lbl {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0A2540;
+    margin-right: 15px;
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px;
+    background: #EAF8F6;
+    color: #0E7C7B;
+    border-radius: 40px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+    .trust-item svg {
+        color: #0E7C7B;
+    }
+
+/*=================================
+RESPONSIVE
+==================================*/
+
+@media(max-width:992px) {
+
+    .investor-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .roadmap-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:768px) {
+
+    .roadmap-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trust-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .trust-lbl {
+        margin-bottom: 10px;
+    }
+
+    .trust-item {
+        width: 100%;
+    }
+}

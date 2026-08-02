@@ -1,0 +1,17 @@
+const MissionCard = ({ icon, title, description }) => {
+    return (
+        <div className="mission-card">
+
+            <div className="mission-icon">
+                {icon}
+            </div>
+
+            <h3>{title}</h3>
+
+            <p>{description}</p>
+
+        </div>
+    );
+};
+
+export default MissionCard;
