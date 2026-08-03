@@ -1,4 +1,4 @@
-﻿const HeroStats = () => {
+const HeroStats = () => {
 
     const stats = [
 

@@ -1,4 +1,4 @@
-﻿import HeroStats from "./HeroStats";
+import HeroStats from "./HeroStats";
 import FloatingCards from "./FloatingCards";
 import "./hero.css";
 
