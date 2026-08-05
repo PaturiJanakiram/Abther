@@ -1,0 +1,366 @@
+/* =========================================
+   TEAM SECTION
+========================================= */
+
+.team-section {
+	padding: 100px 0;
+	background: #ffffff;
+}
+
+
+/* =========================================
+   FOUNDER CARD
+========================================= */
+
+.founder-card {
+	display: grid;
+	grid-template-columns: 420px 1fr;
+	gap: 60px;
+	align-items: center;
+	margin-top: 60px;
+	margin-bottom: 100px;
+}
+
+.founder-image {
+	position: relative;
+}
+
+	.founder-image img {
+		width: 100%;
+		border-radius: 24px;
+		display: block;
+		box-shadow: 0 20px 60px rgba(0,0,0,.12);
+		transition: .4s;
+	}
+
+		.founder-image img:hover {
+			transform: translateY(-8px);
+		}
+
+.founder-content {
+	width: 100%;
+}
+
+.leader-tag {
+	display: inline-block;
+	background: #E9F8F4;
+	color: #0E7C7B;
+	padding: 8px 18px;
+	border-radius: 30px;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-bottom: 18px;
+}
+
+.founder-content h3 {
+	font-size: 42px;
+	color: #0A2540;
+	margin-bottom: 10px;
+	font-family: "Fraunces",serif;
+}
+
+.founder-content h5 {
+	color: #15A38C;
+	font-size: 22px;
+	margin-bottom: 28px;
+	font-weight: 600;
+}
+
+.founder-content p {
+	color: #5D6B7A;
+	line-height: 1.9;
+	font-size: 17px;
+	margin-bottom: 18px;
+}
+
+
+/* =========================================
+   CREDENTIALS
+========================================= */
+
+.credential-grid {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	gap: 18px;
+	margin-top: 35px;
+}
+
+.credential-card {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	padding: 18px 20px;
+	border: 1px solid #E5EAF1;
+	border-radius: 14px;
+	background: #F8FAFC;
+	transition: .35s;
+}
+
+	.credential-card svg {
+		color: #14A38B;
+	}
+
+	.credential-card span {
+		color: #0A2540;
+		font-weight: 600;
+	}
+
+	.credential-card:hover {
+		transform: translateY(-5px);
+		border-color: #14A38B;
+		box-shadow: 0 15px 35px rgba(0,0,0,.08);
+	}
+
+
+/* =========================================
+   DISCIPLINES
+========================================= */
+
+.team-strip {
+	margin-top: 30px;
+	margin-bottom: 90px;
+}
+
+	.team-strip h4 {
+		text-align: center;
+		font-size: 34px;
+		color: #0A2540;
+		margin-bottom: 40px;
+		font-family: "Fraunces",serif;
+	}
+
+.disc-grid {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	gap: 25px;
+}
+
+.disc-card {
+	text-align: center;
+	padding: 35px;
+	border-radius: 18px;
+	background: #ffffff;
+	border: 1px solid #E5EAF1;
+	transition: .35s;
+}
+
+	.disc-card:hover {
+		transform: translateY(-8px);
+		border-color: #14A38B;
+		box-shadow: 0 18px 35px rgba(0,0,0,.08);
+	}
+
+.disc-icon {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	margin: auto;
+	margin-bottom: 20px;
+	background: #E8F8F4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 32px;
+}
+
+.disc-card h5 {
+	font-size: 20px;
+	color: #0A2540;
+	font-family: "Fraunces",serif;
+}
+/*Part 2*/
+/* =========================================
+   ADVISORY SECTION
+========================================= */
+
+.advisor-section {
+	margin-top: 80px;
+}
+
+	.advisor-section h4 {
+		text-align: center;
+		font-size: 36px;
+		color: #0A2540;
+		margin-bottom: 45px;
+		font-family: "Fraunces",serif;
+	}
+
+.advisor-grid {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	gap: 30px;
+}
+
+.advisor-card {
+	background: #fff;
+	border: 1px solid #E5EAF1;
+	border-radius: 20px;
+	padding: 40px 30px;
+	text-align: center;
+	transition: all .35s ease;
+}
+
+	.advisor-card:hover {
+		transform: translateY(-8px);
+		border-color: #14A38B;
+		box-shadow: 0 18px 40px rgba(0,0,0,.08);
+	}
+
+.advisor-icon {
+	width: 75px;
+	height: 75px;
+	margin: 0 auto 25px;
+	border-radius: 50%;
+	background: #E8F8F4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+	.advisor-icon svg {
+		color: #14A38B;
+	}
+
+.advisor-card h3 {
+	font-size: 22px;
+	color: #0A2540;
+	margin-bottom: 15px;
+	font-family: "Fraunces",serif;
+}
+
+.advisor-card p {
+	color: #5B6979;
+	line-height: 1.8;
+	font-size: 16px;
+}
+
+
+/* =========================================
+   HOVER EFFECTS
+========================================= */
+
+.disc-card,
+.credential-card,
+.advisor-card {
+	transition: all .35s ease;
+}
+
+	.disc-card:hover h5,
+	.advisor-card:hover h3 {
+		color: #0E7C7B;
+	}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width:1200px) {
+
+	.founder-card {
+		grid-template-columns: 360px 1fr;
+		gap: 45px;
+	}
+}
+
+
+@media (max-width:992px) {
+
+	.founder-card {
+		grid-template-columns: 1fr;
+		text-align: center;
+	}
+
+	.founder-image {
+		max-width: 380px;
+		margin: 0 auto;
+	}
+
+	.credential-grid {
+		grid-template-columns: repeat(2,1fr);
+	}
+
+	.disc-grid {
+		grid-template-columns: repeat(2,1fr);
+	}
+
+	.advisor-grid {
+		grid-template-columns: repeat(2,1fr);
+	}
+}
+
+
+@media (max-width:768px) {
+
+	.team-section {
+		padding: 80px 0;
+	}
+
+	.founder-content h3 {
+		font-size: 32px;
+	}
+
+	.founder-content h5 {
+		font-size: 18px;
+	}
+
+	.founder-content p {
+		font-size: 16px;
+	}
+
+	.credential-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.disc-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.advisor-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.team-strip h4,
+	.advisor-section h4 {
+		font-size: 28px;
+	}
+}
+
+
+@media (max-width:480px) {
+
+	.founder-card {
+		gap: 35px;
+		margin-bottom: 70px;
+	}
+
+	.leader-tag {
+		font-size: 11px;
+	}
+
+	.founder-content h3 {
+		font-size: 28px;
+	}
+
+	.founder-image img {
+		border-radius: 18px;
+	}
+
+	.credential-card {
+		padding: 16px;
+	}
+
+	.disc-card {
+		padding: 28px 20px;
+	}
+
+	.advisor-card {
+		padding: 30px 22px;
+	}
+
+		.advisor-card h3 {
+			font-size: 20px;
+		}
+}

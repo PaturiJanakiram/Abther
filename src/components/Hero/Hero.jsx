@@ -1,20 +1,15 @@
 import HeroStats from "./HeroStats";
 import FloatingCards from "./FloatingCards";
 import "./hero.css";
-
 import heroImage from "../../assets/images/hero-device.webp";
 
 const Hero = () => {
     return (
-        <section className="hero">
-           
+        <section className="hero">          
+        
             <div className="container hero-grid">            
-                <div className="hero-left">   
-                    <div className="maintenance-bar">
-                        <div className="maintenance-text">
-                            🚧 Website Under Maintenance •  🚧 Website Under Maintenance • 
-                        </div>
-                    </div>
+                <div className="hero-left">         
+                {/*    <Maintanance/>*/}
                     <span className="hero-badge">
                         Deep Science Biotech . Visakhapatnam
                     </span>

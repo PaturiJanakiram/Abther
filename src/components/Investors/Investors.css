@@ -1,0 +1,379 @@
+/* =========================================
+   INVESTORS SECTION
+========================================= */
+
+.investors-section {
+  padding: 100px 0;
+  background: #F8FAFC;
+}
+
+
+/* =========================================
+   INVESTOR GRID
+========================================= */
+
+.investor-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 30px;
+  margin-top: 60px;
+  margin-bottom: 90px;
+}
+
+
+/* =========================================
+   INVESTOR CARD
+========================================= */
+
+.investor-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 22px;
+  padding: 40px;
+  transition: .35s;
+  min-height: 250px;
+}
+
+  .investor-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(0,0,0,.12);
+  }
+
+
+  /* DARK */
+
+  .investor-card.dark {
+    background: #0A2540;
+    color: #fff;
+  }
+
+    .investor-card.dark h3,
+    .investor-card.dark p,
+    .investor-card.dark .investor-label {
+      color: #fff;
+    }
+
+
+  /* TEAL */
+
+  .investor-card.teal {
+    background: linear-gradient(135deg,#0E7C7B,#17A89A);
+    color: #fff;
+  }
+
+    .investor-card.teal h3,
+    .investor-card.teal p,
+    .investor-card.teal .investor-label {
+      color: #fff;
+    }
+
+
+  /* GOLD */
+
+  .investor-card.gold {
+    background: linear-gradient(135deg,#F7C55F,#F2AE2E);
+  }
+
+    .investor-card.gold h3 {
+      color: #0A2540;
+    }
+
+    .investor-card.gold p {
+      color: #36485B;
+    }
+
+
+  /* WHITE */
+
+  .investor-card.plain {
+    background: #fff;
+    border: 1px solid #E5EAF1;
+  }
+
+    .investor-card.plain:hover {
+      border-color: #0E7C7B;
+    }
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.investor-label {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  opacity: .85;
+}
+
+.investor-card h3 {
+  font-size: 52px;
+  margin-bottom: 18px;
+  font-family: "Fraunces",serif;
+  line-height: 1;
+}
+
+.investor-card p {
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+
+/* =========================================
+   ROADMAP
+========================================= */
+
+.roadmap {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.roadmap-row {
+  display: grid;
+  grid-template-columns: 170px 1fr 180px;
+  gap: 35px;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #E5EAF1;
+  border-radius: 20px;
+  padding: 28px 35px;
+  transition: .35s;
+}
+
+  .roadmap-row:hover {
+    border-color: #14A38B;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.08);
+  }
+
+
+/* =========================================
+   PHASE BADGE
+========================================= */
+
+.phase-badge {
+  border-radius: 18px;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+  .phase-badge span {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .phase-badge small {
+    display: block;
+    margin-top: 6px;
+    opacity: .9;
+    font-size: 14px;
+  }
+
+  .phase-badge.p1 {
+    background: #0A2540;
+  }
+
+  .phase-badge.p2 {
+    background: #0E7C7B;
+  }
+
+  .phase-badge.p3 {
+    background: #F7C55F;
+    color: #0A2540;
+  }
+
+  .phase-badge.p4 {
+    background: #16A34A;
+  }
+/*Part 2*/
+/* =========================================
+   ROADMAP CONTENT
+========================================= */
+
+.roadmap-content h3 {
+  font-size: 28px;
+  color: #0A2540;
+  margin-bottom: 12px;
+  font-family: "Fraunces",serif;
+}
+
+.roadmap-content p {
+  color: #5B6979;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+
+/* =========================================
+   FUNDING
+========================================= */
+
+.roadmap-funding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+  .roadmap-funding span {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 20px;
+    background: #E8F8F4;
+    color: #0E7C7B;
+    border-radius: 30px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .roadmap-funding svg {
+    color: #0E7C7B;
+  }
+
+
+/* =========================================
+   GRANT PILLS
+========================================= */
+
+.grant-pills {
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+
+.grant-pill {
+  padding: 14px 24px;
+  border-radius: 40px;
+  border: 1px solid #D9E5EC;
+  background: #ffffff;
+  color: #0A2540;
+  font-weight: 600;
+  transition: all .35s ease;
+}
+
+  .grant-pill:hover {
+    background: #0E7C7B;
+    color: #ffffff;
+    border-color: #0E7C7B;
+    transform: translateY(-3px);
+  }
+
+
+/* =========================================
+   HOVER EFFECTS
+========================================= */
+
+.investor-card,
+.roadmap-row,
+.grant-pill {
+  transition: all .35s ease;
+}
+
+  .investor-card:hover h3 {
+    transform: scale(1.03);
+  }
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width:1200px) {
+
+  .roadmap-row {
+    grid-template-columns: 150px 1fr 160px;
+  }
+}
+
+
+@media (max-width:992px) {
+
+  .investor-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .roadmap-row {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .roadmap-funding {
+    justify-content: center;
+  }
+}
+
+
+@media (max-width:768px) {
+
+  .investors-section {
+    padding: 80px 0;
+  }
+
+  .investor-card {
+    padding: 30px;
+    min-height: auto;
+  }
+
+    .investor-card h3 {
+      font-size: 42px;
+    }
+
+  .roadmap-content h3 {
+    font-size: 24px;
+  }
+
+  .grant-pills {
+    gap: 12px;
+  }
+
+  .grant-pill {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width:480px) {
+
+  .investor-card {
+    padding: 25px;
+  }
+
+    .investor-card h3 {
+      font-size: 34px;
+    }
+
+  .roadmap-row {
+    padding: 24px 20px;
+  }
+
+  .phase-badge {
+    padding: 16px;
+  }
+
+    .phase-badge span {
+      font-size: 18px;
+    }
+
+  .roadmap-content h3 {
+    font-size: 22px;
+  }
+
+  .roadmap-content p {
+    font-size: 15px;
+  }
+
+  .roadmap-funding span {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+}

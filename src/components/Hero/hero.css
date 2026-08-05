@@ -305,26 +305,3 @@
         display: none;
     }
 }
-.maintenance-bar {
-    width: 100%;
-    background: #d32f2f;
-    color: #fff;  
-    font-size: 14px;
-    font-weight: 600;
-    overflow:hidden;
-}
-
-.maintenance-text {
-    display: inline-block;    
-    animation: marquee 15s linear infinite;
-}
-
-@keyframes marquee {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-100%);
-    }
-}

@@ -5,11 +5,10 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 const menuItems = [
     { name: "About", id: "about" },
-    { name: "Platforms", id: "platforms" },
-    { name: "Process", id: "process" },
-    { name: "Team", id: "team" },
-    { name: "Investors", id: "investors" },
-    { name: "Contact", id: "contact" },
+    { name: "Platforms", id: "platforms" },   
+  { name: "Team", id: "team" },
+  { name: "Impact", id: "Impact" },
+    { name: "Investors", id: "investors" },  
 ];
 
 function Navbar() {
@@ -52,7 +51,7 @@ function Navbar() {
 
     return (
         <nav className={sticky ? "navbar sticky" : "navbar"}>
-            <div className="container">
+            <div className="nav-container">
 
                 <div className="logo">
                     <img
