@@ -30,7 +30,7 @@ const Hero = () => {
                         </button>
 
                         <button className="btn-outline">
-                <section id="investors"><Investors /></section>
+                                <Investors />
                         </button>
 
                     </div>
