@@ -30,7 +30,7 @@ const Hero = () => {
                         </button>
 
                         <button className="btn-outline">
-                                <Investors />
+                            Investors
                         </button>
 
                     </div>
