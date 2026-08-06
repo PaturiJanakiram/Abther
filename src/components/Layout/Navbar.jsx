@@ -6,8 +6,8 @@ import { FaBars, FaTimes } from "react-icons/fa";
 const menuItems = [
     { name: "About", id: "about" },
     { name: "Platforms", id: "platforms" },   
-  { name: "Team", id: "team" },
-  { name: "Impact", id: "Impact" },
+    { name: "Team", id: "team" },
+    { name: "Impact", id: "Impact" },
     { name: "Investors", id: "investors" },  
 ];
 

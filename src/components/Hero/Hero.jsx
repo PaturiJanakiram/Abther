@@ -16,12 +16,11 @@ const Hero = () => {
 
                     <h1>
                         Precision Medicine,
-                        <span> Within Reach</span>
+                        <span> within reach </span>of everyone.
                     </h1>
 
                     <p>
-                        AI-powered diagnostics and antibody therapeutics
-                        engineered in India for global healthcare.
+                      We build AI-powered diagnostics and next-generation antibody & ADC therapeutics — engineered in India, designed to global standards, made to reach every clinic on earth.
                     </p>
 
                     <div className="hero-buttons">
@@ -31,7 +30,7 @@ const Hero = () => {
                         </button>
 
                         <button className="btn-outline">
-                            Investors
+                <section id="investors"><Investors /></section>
                         </button>
 
                     </div>
