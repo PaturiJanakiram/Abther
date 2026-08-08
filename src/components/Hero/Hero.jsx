@@ -1,7 +1,7 @@
 import HeroStats from "./HeroStats";
 import FloatingCards from "./FloatingCards";
 import "./hero.css";
-import heroImage from "../../assets/images/hero-device.webp";
+import heroImage from "../../assets/images/hero-device.png";
 
 const Hero = () => {
     return (
@@ -30,7 +30,7 @@ const Hero = () => {
                         </button>
 
                         <button className="btn-outline">
-                            Investors
+                             Investors
                         </button>
 
                     </div>

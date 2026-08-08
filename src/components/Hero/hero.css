@@ -26,7 +26,7 @@
 .hero-left {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;   
 }
 
 .hero-badge {
@@ -155,43 +155,73 @@
 
 .floating-card {
   position: absolute;
-  background: #fff;
-  border-radius: 16px;
-  padding: 14px 18px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.12);
-  /* GPU acceleration */
+  background: linear-gradient(180deg, #ffffff 0%, #f5f9fc 100%);
+  padding: 14px 14px 14px 2px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.12); 
   will-change: transform;
   backface-visibility: hidden;
   animation: float 4s ease-in-out infinite;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.floating-icon {
+  width: 25px;
+  height: 20px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  border-radius: 10px;
+  font-size: 21px;
+  padding:3px;
+}
+
+.clock-icon {
+  background: #e7f5f2;
+  color: #0e9690;
+}
+
+.bulb-icon {
+  background: #fff5d9;
+  color: #e5ad20;
+}
+
+.activity-icon {
+  background: #e7f5f2;
+  color: #0e9690;
 }
 
   .floating-card h4 {
     color: #0A2540;
-    font-size: 15px;
-    margin-bottom: 4px;
+    font-size: 13px;
+    margin-bottom: 2px;
   }
 
   .floating-card p {
     color: #6f7b8c;
-    font-size: 13px;
+    font-size: 12px;
   }
 
-  .floating-card.top {
-    top: 30px;
-    left: 64px;
-  }
+.floating-card.top {
+  top: 30px;
+  left: 63px;
+  border-radius: 0 16px 16px 0px;
+}
 
-  .floating-card.right {
-    right: 64px;
-    bottom: 110px;
-    animation-delay: .7s;
-  }
+.floating-card.right {
+  right: 65px;
+  bottom: 110px;
+  animation-delay: .7s;
+  border-radius: 16px 0px 0px 16px;
+}
 
-  .floating-card.bottom {
-    bottom: -5px;
-    left: 66px;
-    animation-delay: 1.4s;
-  }
+.floating-card.bottom {
+  bottom: -11px;
+  left: 90px;
+  animation-delay: 1.4s;
+  border-radius: 16px 16px 0px 0px;
+}
 
 /* Floating animation */
 
@@ -250,8 +280,9 @@
 @media (max-width:768px) {
 
   .hero {
-    padding: 120px 0 60px;
+    padding: 100px 0 40px;
   }
+  
 
   .hero-left h1 {
     font-size: 38px;
@@ -262,11 +293,11 @@
   }
 
   .hero-right img {
-    max-width: 300px;
+    max-width: 350px;
   }
 
   .floating-card {
-    padding: 10px 14px;
+    padding: 10px 12px 10px 12px;
     border-radius: 12px;
     font-size: 12px;
   }
@@ -290,8 +321,8 @@
     }
 
     .floating-card.bottom {
-      left: 20px;
-      bottom: -10px;
+      left: 40px;
+      bottom: -5px;
     }
 }
 
@@ -304,10 +335,16 @@
     .hero-left h1 {
       font-size: 32px;
     }
-
-    .hero-buttons {
-      flex-direction: column;
+    .hero-left  {
+      margin: 0px;
     }
+    .hero-right {
+      margin: 0px;
+    }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
 
     .btn-primary,
     .btn-outline {
@@ -315,14 +352,14 @@
     }
 
     .hero-stats {
-      flex-direction: column;
-      gap: 20px;
+      flex-direction: row;
+      gap: 25px;
     }
 
-    .floating-card {
-      padding: 8px 12px;
-      border-radius: 10px;
-    }
+  .floating-card {
+    padding: 10px 12px 10px 12px;
+    border-radius: 10px;
+  }
 
       .floating-card h4 {
         font-size: 12px;
@@ -333,18 +370,18 @@
       }
 
       .floating-card.top {
-        top: 5px;
-        left: 5px;
+        top: 35px;
+        left: 1px;
       }
 
       .floating-card.right {
-        right: 5px;
+        right: 2px;
         bottom: 80px;
       }
 
       .floating-card.bottom {
-        left: 10px;
-        bottom: -5px;
+        left: 40px;
+        bottom: -12px;    
       }
   
 }

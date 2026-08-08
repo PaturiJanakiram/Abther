@@ -3,7 +3,7 @@
 ========================================= */
 
 .about-section {
-  padding: 100px 0;
+  padding: 50px 0;
   background: #fff;
 }
 
@@ -315,8 +315,7 @@
 
   .container {
     padding: 0 20px;
-  }
-
+  }  
   .section-header h2 {
     font-size: 28px;
   }
