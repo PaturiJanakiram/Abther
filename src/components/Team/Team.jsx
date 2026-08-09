@@ -1,28 +1,50 @@
 import "./Team.css";
 import TeamCard from "./TeamCard";
 import AdvisorCard from "./AdvisorCard";
+import {  Microscope,  Dna,  BrainCircuit,  Stethoscope,  FileCheck,  Handshake } from "lucide-react";
 
 const disciplines = [
-  "Molecular Diagnostics",
-  "Antibody Engineering",
-  "AI & Software",
-  "Clinical Research",
-  "Regulatory Affairs",
-  "Manufacturing"
+  {
+    name: "Molecular Diagnostics",
+    icon: Microscope
+  },
+  {
+    name: "Antibody Engineering",
+    icon: Dna
+  },
+  {
+    name: "AI & Software",
+    icon: BrainCircuit
+  },
+  {
+    name: "Clinical Research",
+    icon: Stethoscope
+  },
+  {
+    name: "IP & Regulatory",
+    icon: FileCheck
+  },
+  {
+    name: "Commercial & Partnerships",
+    icon: Handshake
+  }
 ];
 
 const advisors = [
   {
-    name: "Global Scientific Advisors",
-    role: "International experts in antibody therapeutics, translational medicine and oncology."
+    name: "Prof. D. Narasimha Rao",
+    role:
+      "Honorary Professor, Indian Institute of Science (IISc), Bangalore — molecular biology & biochemistry"
   },
   {
-    name: "Clinical & Regulatory Network",
-    role: "Supporting clinical validation, regulatory strategy and healthcare partnerships."
+    name: "Dr. Madhusoodanan U. K.",
+    role:
+      "Sree Chitra Tirunal Institute for Medical Sciences & Technology (SCTIMST) — medical diagnostics research"
   },
   {
-    name: "Innovation & Industry Partners",
-    role: "Strengthening commercialization, manufacturing and strategic collaborations."
+    name: "Dr. Ramarao",
+    role:
+      "Central University of Tamil Nadu (CUTN) — research sciences & co-investigator"
   }
 ];
 
@@ -82,22 +104,27 @@ export default function Team() {
 
           <div className="disc-grid">
 
-            {disciplines.map((item, index) => (
+            {disciplines.map((item, index) => {
+              const Icon = item.icon;
 
-              <div
-                key={index}
-                className="disc-card"
-              >
+              return (
+                <div
+                  key={index}
+                  className="disc-card"
+                >
 
-                <div className="disc-icon">
-                  🧬
+                  <div className="disc-icon">
+                    <Icon
+                      size={24}
+                      strokeWidth={1.8}
+                    />
+                  </div>
+
+                  <h5>{item.name}</h5>
+
                 </div>
-
-                <h5>{item}</h5>
-
-              </div>
-
-            ))}
+              );
+            })}
 
           </div>
 
@@ -114,7 +141,7 @@ export default function Team() {
             {advisors.map((advisor, index) => (
 
               <AdvisorCard
-                key={index}
+                key={advisor.name}
                 {...advisor}
               />
 

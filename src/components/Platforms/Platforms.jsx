@@ -1,5 +1,8 @@
 import "./Platforms.css";
 import PlatformCard from "./PlatformCard";
+import diagnosticsDevice from "../../images/platforms/diagnostics-device.png";
+import adcplatform from "../../images/platforms/adc-platform.png";
+
 
 const platforms = [
   {
@@ -30,7 +33,8 @@ const platforms = [
       }
     ],
 
-    image: "/images/platforms/diagnostics-device.webp"
+    image: diagnosticsDevice
+
   },
 
   {
@@ -61,43 +65,33 @@ const platforms = [
       }
     ],
 
-    image: "/images/platforms/adc-platform.webp"
+    image: adcplatform
   }
 ];
 
 export default function Platforms() {
   return (
-    <section
-      id="platforms"
-      className="platforms-section"
-    >
+    <section id="platforms"  className="platforms-section">
       <div className="container">
-
         <div className="section-header center">
-
           <span className="section-tag">
             What We Do
           </span>
-
           <h2>
             Two technologies. One mission.
           </h2>
-
           <p>
             Diagnostics that find disease earlier.
             Therapeutics that treat it more precisely.
             Together, they address the full arc of care.
           </p>
-
         </div>
-
         {platforms.map((platform) => (
           <PlatformCard
             key={platform.id}
             platform={platform}
           />
         ))}
-
       </div>
     </section>
   );

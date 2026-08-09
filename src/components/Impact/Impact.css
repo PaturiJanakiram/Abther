@@ -1,0 +1,214 @@
+
+/* ==========================================
+   IMPACT / POSITIONING
+========================================== */
+.impact {
+  width: 100%;
+  padding: 96px 0;
+  background: #f5f8fa;
+}
+
+.impact .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.impact-header {
+  max-width: 720px;
+  margin-bottom: 56px;
+}
+
+.impact-eyebrow {
+  display: inline-block;
+  color: #0E7C7B;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.impact-header h2 {
+  margin: 0 0 18px;
+  color: #0A2540;
+  font-size: 42px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.impact-header p {
+  margin: 0;
+  color: #526579;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+.impact-header em {
+  color: #0A2540;
+}
+
+/* ==========================================
+   TABLE WRAPPER
+========================================== */
+
+.impact-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(10, 37, 64, 0.08);
+}
+
+/* ==========================================
+   TABLE
+========================================== */
+
+.impact-table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #ffffff;
+  border: 1px solid #dce5eb;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+  /* ==========================================
+   HEADER CELLS
+========================================== */
+
+  .impact-table th {
+    padding: 18px 20px;
+    background: #0A2540;
+    color: #ffffff;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 1px solid #dce5eb;
+  }
+
+    .impact-table th.impact-highlight {
+      background: linear-gradient( 135deg, #0E7C7B 0%, #12A594 100% );
+    }
+
+  /* ==========================================
+   BODY CELLS
+========================================== */
+
+  .impact-table td {
+    padding: 18px 20px;
+    color: #526579;
+    text-align: left;
+    font-size: 15px;
+    border-bottom: 1px solid #dce5eb;
+    background: #ffffff;
+  }
+
+    .impact-table td:first-child {
+      color: #0A2540;
+      font-weight: 600;
+    }
+
+    /* ==========================================
+   ABTHER COLUMN
+========================================== */
+
+    .impact-table td.impact-abther {
+      background: #e5f6f4;
+      color: #0E7C7B;
+      font-weight: 600;
+    }
+
+  /* ==========================================
+   ALTERNATING ROWS
+========================================== */
+
+  .impact-table tbody tr:nth-child(even) td:not(.impact-abther) {
+    background: #f5f8fa;
+  }
+
+  /* ==========================================
+   LAST ROW
+========================================== */
+
+  .impact-table tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+/* ==========================================
+   NOTE
+========================================== */
+
+.impact-note {
+  margin: 18px 0 0;
+  color: #7b8b9b;
+  font-size: 14px;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 960px) {
+
+  .impact {
+    padding: 64px 0;
+  }
+
+  .impact-header h2 {
+    font-size: 32px;
+  }
+
+  .impact-header p {
+    font-size: 17px;
+  }
+
+  .impact-table th,
+  .impact-table td {
+    padding: 15px 16px;
+  }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 560px) {
+
+  .impact {
+    padding: 56px 0;
+  }
+
+  .impact-header {
+    margin-bottom: 40px;
+  }
+
+    .impact-header h2 {
+      font-size: 30px;
+    }
+
+    .impact-header p {
+      font-size: 16px;
+    }
+
+  .impact-table {
+    min-width: 700px;
+  }
+
+    .impact-table th,
+    .impact-table td {
+      padding: 14px;
+      font-size: 13px;
+    }
+
+  .impact-note {
+    font-size: 12px;
+  }
+}

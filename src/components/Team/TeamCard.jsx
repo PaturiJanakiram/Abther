@@ -1,6 +1,6 @@
 import React from "react";
 import { Award, GraduationCap, Briefcase } from "lucide-react";
-import founderImage from "../../images/team/founder.webp";
+import founderImage from "../../images/team/founder.JPG";
 
 const TeamCard = ({ founder }) => {
   return (

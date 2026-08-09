@@ -220,7 +220,7 @@
   bottom: -11px;
   left: 90px;
   animation-delay: 1.4s;
-  border-radius: 16px 16px 0px 0px;
+  border-radius: 16px 16px 0px 0px; 
 }
 
 /* Floating animation */
@@ -379,9 +379,9 @@
         bottom: 80px;
       }
 
-      .floating-card.bottom {
-        left: 40px;
-        bottom: -12px;    
-      }
+    .floating-card.bottom {
+      left: 40px;
+      bottom: -12px;   
+    }
   
 }
