@@ -205,12 +205,12 @@
 
 .floating-card.top {
   top: 30px;
-  left: 63px;
+  left: 57px;
   border-radius: 0 16px 16px 0px;
 }
 
 .floating-card.right {
-  right: 65px;
+  right: 58px;
   bottom: 110px;
   animation-delay: .7s;
   border-radius: 16px 0px 0px 16px;

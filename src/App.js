@@ -10,6 +10,9 @@ import WhatDrivesUs from "./components/WhatDrivesUs/WhatDrivesUs";
 import Inspiration from "./components/Inspiration/Inspiration";
 import Investors from "./components/Investors/Investors";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+import "./App.css";
+
 
 
 
@@ -44,6 +47,7 @@ function App() {
 
         <section id="Contact"><Contact /></section>
 
+        <Footer/>
       
   
            

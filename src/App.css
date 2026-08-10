@@ -1,0 +1,531 @@
+/* ==========================================
+   ABTHER APP - GLOBAL APPLICATION STYLES
+========================================== */
+
+/* ==========================================
+   ROOT VARIABLES
+========================================== */
+
+:root {
+  /* Brand Colors */
+  --navy: #0A2540;
+  --navy-2: #0E3050;
+  --teal: #0E7C7B;
+  --teal-br: #12A594;
+  --teal-lt: #E6F4F3;
+  --gold: #C9A24B;
+  --gold-lt: #F7F1E3;
+  /* Text */
+  --ink: #132437;
+  --slate: #516074;
+  --mist: #8A97A6;
+  /* Background */
+  --paper: #FFFFFF;
+  --paper-2: #F7F9FB;
+  --paper-3: #F0F4F8;
+  /* Additional */
+  --green-dk: #083D33;
+  --line: #E4E9EF;
+  /* Radius */
+  --radius: 16px;
+  --radius-sm: 10px;
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(16, 40, 64, 0.06), 0 1px 2px rgba(16, 40, 64, 0.04);
+  --shadow-md: 0 8px 24px rgba(16, 40, 64, 0.08);
+  --shadow-lg: 0 20px 48px rgba(16, 40, 64, 0.12);
+  /* Layout */
+  --max-width: 1180px;
+  /* Fonts */
+  --font-body: 'Inter', sans-serif;
+  --font-heading: 'Fraunces', Georgia, serif;
+}
+
+
+/* ==========================================
+   APP ROOT
+========================================== */
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: var(--paper);
+}
+
+
+/* ==========================================
+   MAIN CONTENT
+========================================== */
+
+.main-content {
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+/* ==========================================
+   COMMON CONTAINER
+========================================== */
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+
+/* ==========================================
+   COMMON SECTION
+========================================== */
+
+.section {
+  width: 100%;
+  position: relative;
+  padding: 100px 0;
+}
+
+.section-alt {
+  background: var(--paper-2);
+}
+
+.section-white {
+  background: var(--paper);
+}
+
+.section-dark {
+  background: linear-gradient( 160deg, var(--navy) 0%, #071A2E 100% );
+}
+
+
+/* ==========================================
+   SECTION HEADER
+========================================== */
+
+.section-header {
+  max-width: 760px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+  .section-header.left {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
+
+  .section-header .eyebrow {
+    margin-bottom: 14px;
+  }
+
+  .section-header h2 {
+    margin-bottom: 20px;
+    color: var(--navy);
+  }
+
+  .section-header p {
+    max-width: 680px;
+    margin: 0 auto;
+    color: var(--slate);
+  }
+
+  .section-header.left p {
+    margin-left: 0;
+  }
+
+
+/* ==========================================
+   EYEBROW / SMALL LABEL
+========================================== */
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--teal);
+}
+
+  .eyebrow.on-dark {
+    color: var(--teal-br);
+  }
+
+  .eyebrow.gold {
+    color: var(--gold);
+  }
+
+
+/* ==========================================
+   COMMON HEADINGS
+========================================== */
+
+.section h1,
+.section h2,
+.section h3,
+.section h4 {
+  font-family: var(--font-heading);
+}
+
+.section h2 {
+  font-size: clamp(36px, 4vw, 52px);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.section h3 {
+  font-size: clamp(26px, 3vw, 36px);
+}
+
+.section h4 {
+  font-size: 20px;
+}
+
+
+/* ==========================================
+   COMMON TEXT
+========================================== */
+
+.section p {
+  font-family: var(--font-body);
+}
+
+.lead {
+  font-size: 20px;
+  line-height: 1.7;
+  color: var(--slate);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-navy {
+  color: var(--navy);
+}
+
+.text-teal {
+  color: var(--teal);
+}
+
+.text-gold {
+  color: var(--gold);
+}
+
+
+/* ==========================================
+   COMMON GRID
+========================================== */
+
+.grid {
+  display: grid;
+  width: 100%;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+
+/* ==========================================
+   COMMON FLEX
+========================================== */
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 48px;
+  padding: 0 22px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+  .btn:hover {
+    transform: translateY(-2px);
+  }
+
+.btn-primary {
+  background: var(--teal);
+  color: #ffffff;
+}
+
+  .btn-primary:hover {
+    background: var(--teal-br);
+    box-shadow: 0 8px 20px rgba(14, 124, 123, 0.22);
+  }
+
+.btn-secondary {
+  background: transparent;
+  color: var(--navy);
+  border-color: var(--navy);
+}
+
+  .btn-secondary:hover {
+    background: var(--navy);
+    color: #ffffff;
+  }
+
+.btn-gold {
+  background: var(--gold);
+  color: #ffffff;
+}
+
+  .btn-gold:hover {
+    background: #b48d3d;
+  }
+
+
+/* ==========================================
+   CARDS
+========================================== */
+
+.card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+  .card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(14, 124, 123, 0.25);
+  }
+
+
+/* ==========================================
+   DARK SECTION
+========================================== */
+
+.dark-section {
+  background: linear-gradient( 160deg, var(--navy) 0%, #071A2E 100% );
+  color: #ffffff;
+}
+
+  .dark-section h1,
+  .dark-section h2,
+  .dark-section h3,
+  .dark-section h4 {
+    color: #ffffff;
+  }
+
+  .dark-section p {
+    color: rgba(255, 255, 255, 0.68);
+  }
+
+
+/* ==========================================
+   DIVIDER
+========================================== */
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: var(--line);
+}
+
+.divider-dark {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+
+/* ==========================================
+   SPACING UTILITIES
+========================================== */
+
+.mt-1 {
+  margin-top: 10px;
+}
+
+.mt-2 {
+  margin-top: 20px;
+}
+
+.mt-3 {
+  margin-top: 30px;
+}
+
+.mt-4 {
+  margin-top: 40px;
+}
+
+.mb-1 {
+  margin-bottom: 10px;
+}
+
+.mb-2 {
+  margin-bottom: 20px;
+}
+
+.mb-3 {
+  margin-bottom: 30px;
+}
+
+.mb-4 {
+  margin-bottom: 40px;
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 992px) {
+
+  .container {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .section {
+    padding: 80px 0;
+  }
+
+  .section-header {
+    margin-bottom: 45px;
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+/* ==========================================
+   TABLET / MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .section {
+    padding: 70px 0;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+    .section-header h2 {
+      font-size: 36px;
+    }
+
+  .lead {
+    font-size: 18px;
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .flex-between {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .section-header h2 {
+    font-size: 31px;
+  }
+
+  .section-header p {
+    font-size: 15px;
+  }
+
+  .eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.12em;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

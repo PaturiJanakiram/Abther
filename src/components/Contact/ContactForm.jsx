@@ -5,20 +5,13 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     alert("Thank you! Your message has been submitted.");
   };
 
   return (
-    <form
-      className="contact-form"
-      onSubmit={handleSubmit}
-    >
-
+    <form className="contact-form" onSubmit={handleSubmit}>
       <h3>Send us a message</h3>
-
       <div className="form-group">
-
         <input
           type="text"
           placeholder="Your Name"
