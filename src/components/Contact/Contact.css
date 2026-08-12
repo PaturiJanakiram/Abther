@@ -1,12 +1,4 @@
 /* =========================================
-   CONTACT SECTION
-========================================= */
-
-.contact-section {
-  padding: 100px 0;
-  background: #F8FAFC;
-}
-
 
 /* =========================================
    CONTACT LAYOUT
@@ -15,11 +7,12 @@
 .contact-wrapper {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
-  gap: 60px;
+  gap: 40px;
   margin-top: 70px;
   align-items: start;
+  background: #0A2540;
+  border-radius: 20px;
 }
-
 
 /* =========================================
    CONTACT INFORMATION
@@ -28,18 +21,31 @@
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 25px;
+  padding:15px;
+  color:white;
+  margin-top:5px;
 }
+
+.contact-grid h1{
+ color:white;
+ padding:15px;
+}
+  .contact-grid h2 {
+    color: white;
+    padding: 15px;
+  }
+  .contact-grid p {
+    color: white;
+    padding: 15px;
+  }
 
 .contact-card {
   display: flex;
   align-items: flex-start;
-  gap: 20px;
-  padding: 30px;
-  background: #ffffff;
+  gap: 10px;  
   border-radius: 20px;
-  border: 1px solid #E5EAF1;
   transition: .35s;
+  padding: 15px;
 }
 
   .contact-card:hover {
@@ -50,7 +56,7 @@
 
 .contact-icon {
   width: 60px;
-  height: 60px;
+  line-height: 1.7;
   border-radius: 16px;
   background: #E8F8F4;
   display: flex;
@@ -64,16 +70,20 @@
   }
 
 .contact-card h3 {
-  font-size: 22px;
-  color: #0A2540;
-  margin-bottom: 8px;
+  font-size: 15px;
+  height: 30px;
+  color: #D9E5EC;
   font-family: "Fraunces",serif;
+  line-height: 1.7;
+  width: 150px;
 }
 
 .contact-card p {
   color: #5B6979;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.7;
+  width: 250px;
+  padding:0;
 }
 
 
@@ -82,11 +92,11 @@
 ========================================= */
 
 .contact-form {
-  background: #ffffff;
+  background: #0A2540;
   padding: 40px;
   border-radius: 24px;
   border: 1px solid #E5EAF1;
-  box-shadow: 0 15px 40px rgba(0,0,0,.05);
+  box-shadow: 0 15px 40px rgba(0,0,0,.05); 
 }
 
   .contact-form h3 {
@@ -94,6 +104,7 @@
     color: #0A2540;
     margin-bottom: 30px;
     font-family: "Fraunces",serif;
+    color:white;
   }
 
 

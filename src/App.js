@@ -6,7 +6,6 @@ import Platforms from "./components/Platforms/Platforms";
 import HowItWorks from "./components/HowItWorks/HowItWorks";
 import Impact from "./components/Impact/Impact";
 import Team from "./components/Team/Team";
-import WhatDrivesUs from "./components/WhatDrivesUs/WhatDrivesUs";
 import Inspiration from "./components/Inspiration/Inspiration";
 import Investors from "./components/Investors/Investors";
 import Contact from "./components/Contact/Contact";
@@ -37,9 +36,7 @@ function App() {
 
         <section id="impact"><Impact /></section>
 
-        <section id="team"><Team /></section>
-
-        <section id="what-drives-us"><WhatDrivesUs /></section>
+        <section id="team"><Team /></section>    
 
         <section id="inspiration"> <Inspiration /></section>
 

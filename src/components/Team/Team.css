@@ -290,7 +290,7 @@
   .advisor-section > h4 {
     margin: 0 0 26px;
     color: #C9A24B;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.1em;
     line-height: 1.3;
@@ -339,7 +339,7 @@
    ADVISOR NAME
 ========================================== */
 
-  .advisor-card h5 {
+  .advisor-card h3 {
     margin: 0 0 7px;
     color: #FFFFFF;
     font-family: Georgia, "Times New Roman", serif;
@@ -394,17 +394,17 @@
     border-radius: 16px;
   }
 
-    .advisor-section > h4 {
+    .advisor-section h4 {
       margin-bottom: 20px;
-      font-size: 13px;
+      font-size: 12px;
     }
 
   .advisor-card {
     padding: 20px;
   }
 
-    .advisor-card h5 {
-      font-size: 17px;
+    .advisor-card h3 {
+      font-size: 16px;
     }
 
     .advisor-card p {
@@ -445,16 +445,16 @@
     border-radius: 16px;
   }
 
-    .advisor-section > h4 {
+    .advisor-section  h4 {
       margin-bottom: 20px;
-      font-size: 13px;
+      font-size: 12px;
     }
 
   .advisor-card {
     padding: 20px;
   }
 
-    .advisor-card h5 {
+    .advisor-card h3 {
       font-size: 17px;
     }
 
@@ -586,8 +586,11 @@
 	.advisor-card {
 		padding: 30px 22px;
 	}
+  .advisor-section h4 {
+    font-size: 18px;
+  }
 
-		.advisor-card h3 {
-			font-size: 20px;
-		}
+  .advisor-card h3 {
+    font-size: 16px;
+  }
 }

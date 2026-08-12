@@ -13,7 +13,7 @@ const ContactInfo = ({ icon, title, value }) => {
       case "Head Office":
         return <MapPin size={24} />;
       case "Email":
-        return <Mail size={24} />;
+        return <Mail   size={24} />;
       case "Phone":
         return <Phone size={24} />;
       case "Website":
@@ -25,15 +25,11 @@ const ContactInfo = ({ icon, title, value }) => {
 
   return (
     <div className="contact-card">
-
       <div className="contact-icon">
         {getIcon()}
       </div>
-
       <h3>{title}</h3>
-
       <p>{value}</p>
-
     </div>
   );
 };
