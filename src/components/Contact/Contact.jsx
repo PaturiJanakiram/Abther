@@ -4,50 +4,38 @@ import ContactForm from "./ContactForm";
 
 const contactDetails = [
   {
-    icon: "📍",
-    title: "Head Office",
-    value:
-      "Visakhapatnam, Andhra Pradesh, India"
-  },
-  {
     icon: "✉️",
-    title: "Email",
-    value:
-      "info@abther.com"
-  },
+    title: "EMAIL",
+    value: "abther.biotech@gmail.com"
+  }, 
   {
-    icon: "📞",
-    title: "Phone",
-    value:
-      "+91 XXXXX XXXXX"
-  },
+    icon: "📍",
+    title: "HEADQUARTERS",
+    value: "Visakhapatnam, Andhra Pradesh, India"
+  },  
   {
     icon: "🌐",
-    title: "Website",
-    value:
-      "www.abther.com"
+    title: "FOCUS",
+    value: "Diagnostics · Antibody & ADC therapeutics"
   }
 ];
 
 export default function Contact() {
   return (
-    <section  id="contact">   
+    <section id="contact" className="contact-section">
       <div className="container">       
         <div className="contact-wrapper">       
           <div className="contact-left">
             <div className="contact-grid">
-              <h1>
+              <h5>
                 Get In Touch
+              </h5>
+              <h1>
+                Let's build the future of healthcare — together.
               </h1>
-              <h2>
-                Let's build the future of healthcare together
-              </h2>
-              <p>
-                Whether you're an investor, research partner,
-                healthcare organization, or simply interested in
-                our work, we'd love to hear from you.
-              </p>
-
+              <h3 style={{ fontStyle: "italic", lineHeight: "30px" }}>
+                "The convergence of AI-enabled diagnostics, precision antibody biology, and a maturing biopharma ecosystem creates a rare window. AbTher is built to lead it."
+              </h3>
               {contactDetails.map((item, index) => (
 
                 <ContactInfo

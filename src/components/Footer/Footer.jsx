@@ -23,13 +23,12 @@ const Footer = () => {
               <div className="n">AbTher Biotech</div>
             </div>
             <p>
-              Precision AI-powered diagnostics and antibody therapeutics —
-              democratising access to healthcare worldwide.
+              Precision diagnostics and antibody & ADC therapeutics — engineered in India, designed for the world. Democratising access to fast, accurate, affordable healthcare.
             </p>
           </div>
 
           <div className="foot-col">
-            <h5>Company</h5>
+            <h5>EXPLORE</h5>
             <a href="#about">About</a>
             <a href="#platforms">Platforms</a>
             <a href="#team">Team</a>
@@ -44,8 +43,10 @@ const Footer = () => {
         </div>
 
         <div className="foot-bottom">
-          <p>© 2026 AbTher Biotech. All rights reserved.</p>
-          <p>Made with ❤️ in India</p>
+          <p>© 2025 AbTher Biotech Pvt. Ltd. · Visakhapatnam, Andhra Pradesh, India
+
+            </p>
+          <p>Democratising healthcare, one drop at a time.</p>
         </div>
       </div>
     </footer>

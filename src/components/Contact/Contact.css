@@ -4,11 +4,21 @@
    CONTACT LAYOUT
 ========================================= */
 
+.contact-section {
+  padding: 100px 0;
+  background: #0A2540;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 25px;
+}
+
 .contact-wrapper {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 40px;
-  margin-top: 70px;
   align-items: start;
   background: #0A2540;
   border-radius: 20px;
@@ -26,26 +36,15 @@
   margin-top:5px;
 }
 
-.contact-grid h1{
+.contact-grid h1,h3,h5{
  color:white;
  padding:15px;
-}
-  .contact-grid h2 {
-    color: white;
-    padding: 15px;
-  }
-  .contact-grid p {
-    color: white;
-    padding: 15px;
-  }
+ line-height:35px;
+}  
 
 .contact-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;  
   border-radius: 20px;
   transition: .35s;
-  padding: 15px;
 }
 
   .contact-card:hover {
@@ -71,18 +70,16 @@
 
 .contact-card h3 {
   font-size: 15px;
-  height: 30px;
+  height: auto;
   color: #D9E5EC;
   font-family: "Fraunces",serif;
   line-height: 1.7;
-  width: 150px;
 }
 
 .contact-card p {
   color: #5B6979;
   font-size: 15px;
   line-height: 1.7;
-  width: 250px;
   padding:0;
 }
 
@@ -95,7 +92,7 @@
   background: #0A2540;
   padding: 40px;
   border-radius: 24px;
-  border: 1px solid #E5EAF1;
+  border: 1px solid #b7b7b7;
   box-shadow: 0 15px 40px rgba(0,0,0,.05); 
 }
 

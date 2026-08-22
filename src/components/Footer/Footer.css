@@ -1,7 +1,12 @@
 /* Footer Section */
 .footer {
   background: #061525;
-  padding: 56px 0 30px;
+  padding: 56px 0px 0px 80px;
+}
+.wrap {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 25px;
 }
 
 .foot-top {
@@ -55,6 +60,7 @@
   text-transform: uppercase;
   margin-bottom: 16px;
   font-weight: 700;
+  padding:0;
 }
 
 .foot-col a {
