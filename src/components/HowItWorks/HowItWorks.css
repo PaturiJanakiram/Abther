@@ -3,7 +3,7 @@
 ========================================== */
 .how-it-works {
   width: 100%;
-  padding: 96px 0;
+  padding: 50px 0;
   background: linear-gradient( 160deg, #0A2540 0%, #071a2e 100% );
   color: #ffffff;
 }
@@ -192,13 +192,17 @@
     width: 50px;
     height: 50px;
     font-size: 20px;
+    float: left;    
+    position:absolute;
   }
 
   .step h4 {
     font-size: 18px;
+    margin-left: 65px;
   }
 
   .step p {
     font-size: 14px;
+    margin-left: 65px;
   }
 }

@@ -70,8 +70,8 @@ export default function About() {
       <section id="about" className="about-section">
         <div className="container">
 
-          <div className="section-header">
-            <span className="section-tag">Who We Are</span>
+          <div className="about-header">
+            <span className="about-tag">Who We Are</span>
 
             <h2>
               A deep-science company built to close the healthcare gap
@@ -110,8 +110,8 @@ export default function About() {
 
         <div className="container">
 
-          <div className="section-header">
-            <span className="section-tag">
+          <div className="about-header">
+            <span className="about-tag">
               What We Stand For
             </span>
 

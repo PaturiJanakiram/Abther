@@ -1,32 +1,12 @@
 import React from "react";
-import {  
-  Mail,
-  MapPin,
-  Globe
-} from "lucide-react";
-
-const ContactInfo = ({ icon, title, value }) => {
-
-  const getIcon = () => {
-    switch (title) {
-      case "Email":
-        return <Mail size={24} />;
-      case "Head Office":
-        return <MapPin size={24} />;     
-      case "Focus":
-        return <Globe size={24} />;    
-      default:
-        return null;
-    }
-  };
+const ContactInfo = ({ icon, title, value }) => { 
 
   return (
     <div className="contact-card">
       <div className="contact-icon">
-        {getIcon()}
+        {icon}
       </div>
-      <h3>{title} <br/><p>{value}</p></h3>
-     
+      <div className="contact-info"><h3>{title} <br/><p>{value}</p></h3></div> 
     </div>
   );
 };

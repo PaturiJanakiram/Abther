@@ -6,7 +6,24 @@
   padding: 100px 0;
   background: #F8FAFC;
 }
+.investors-header {
+  max-width: 820px;
+  margin: 0;
+  text-align: left;
+}
 
+.investors-tag {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 30px;
+  background: #E8F8F4;
+  color: #0E7C7B;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
 
 /* =========================================
    INVESTOR GRID
@@ -201,12 +218,14 @@
   color: #0A2540;
   margin-bottom: 12px;
   font-family: "Fraunces",serif;
+  text-align:left;
 }
 
 .roadmap-content p {
   color: #5B6979;
   line-height: 1.8;
   font-size: 16px;
+  text-align: left;
 }
 
 

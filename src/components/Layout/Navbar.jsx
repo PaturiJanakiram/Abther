@@ -43,7 +43,6 @@ function Navbar() {
 
     const scrollSection = (id) => {
         setMobile(false);
-
         document.getElementById(id)?.scrollIntoView({
             behavior: "smooth",
         });
@@ -52,7 +51,6 @@ function Navbar() {
     return (
         <nav className={sticky ? "navbar sticky" : "navbar"}>
             <div className="nav-container">
-
                 <div className="logo">
                     <img
                         src={logo}
@@ -74,7 +72,6 @@ function Navbar() {
                 </div>
 
                 <ul className={mobile ? "nav-links active" : "nav-links"}>
-
                     {menuItems.map((item) => (
                         <li key={item.id}>
                             <button
@@ -89,8 +86,7 @@ function Navbar() {
                     <li>
                         <button
                             className="contact-btn"
-                            onClick={() => scrollSection("contact")}
-                        >
+                            onClick={() => scrollSection("contact")}                        >
                             Get in touch
                         </button>
                     </li>
@@ -99,8 +95,7 @@ function Navbar() {
 
                 <div
                     className="mobile-icon"
-                    onClick={() => setMobile(!mobile)}
-                >
+                    onClick={() => setMobile(!mobile)}                >
                     {mobile ? <FaTimes /> : <FaBars />}
                 </div>
 

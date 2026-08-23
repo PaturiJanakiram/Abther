@@ -1,5 +1,6 @@
 
 import "./Inspiration.css";
+import InspirationCard from "./InspirationCard";
 
 const stories = [
   {
@@ -35,9 +36,9 @@ export default function Inspiration() {
             SECTION HEADER
         ========================================== */}
 
-        <div className="section-header">
+        <div className="inspiration-header">
 
-          <span className="section-tag">
+          <span className="inspiration-tag">
             What drives us
           </span>
 
@@ -58,40 +59,13 @@ export default function Inspiration() {
             STORY CARDS
         ========================================== */}
 
-        <div className="insp-grid">
-
-          {stories.map((story) => (
-
-            <div
-              key={story.id}
-              className={`insp - card ${ story.type } `}
-            >
-
-              <div className="insp-overlay"></div>
-
-              <div className="insp-content">
-
-                <div className="insp-number">
-                  {story.id}
-                </div>
-
-                <h3>
-                  {story.title}
-                </h3>
-
-                <p>
-                  {story.description}
-                </p>
-
-              </div>
-
-            </div>
-
-          ))}
-
+        <div className="inspiration-grid">
+          {stories.map((stories, index) => (
+            <InspirationCard key={stories.id} stories={stories} />
+            ))}
         </div>
 
-      </div>
+        </div>
 
     </section>
   );

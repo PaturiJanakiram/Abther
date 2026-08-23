@@ -74,9 +74,9 @@ export default function Team() {
 
       <div className="container">
 
-        <div className="section-header">
+        <div className="team-header">
 
-          <span className="section-tag">
+          <span className="team-tag">
             Leadership
           </span>
 

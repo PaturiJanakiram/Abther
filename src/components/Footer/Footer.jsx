@@ -43,9 +43,7 @@ const Footer = () => {
         </div>
 
         <div className="foot-bottom">
-          <p>© 2025 AbTher Biotech Pvt. Ltd. · Visakhapatnam, Andhra Pradesh, India
-
-            </p>
+          <p>© 2025 AbTher Biotech Pvt. Ltd. · Visakhapatnam, Andhra Pradesh, India </p>
           <p>Democratising healthcare, one drop at a time.</p>
         </div>
       </div>

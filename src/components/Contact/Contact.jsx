@@ -9,12 +9,12 @@ const contactDetails = [
     value: "abther.biotech@gmail.com"
   }, 
   {
-    icon: "📍",
+    icon: "🌐",   
     title: "HEADQUARTERS",
     value: "Visakhapatnam, Andhra Pradesh, India"
   },  
   {
-    icon: "🌐",
+    icon: "📍",
     title: "FOCUS",
     value: "Diagnostics · Antibody & ADC therapeutics"
   }

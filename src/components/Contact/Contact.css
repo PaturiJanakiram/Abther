@@ -5,20 +5,20 @@
 ========================================= */
 
 .contact-section {
-  padding: 100px 0;
+  padding:100px 0;
   background: #0A2540;
 }
 
 .container {
   max-width: 1200px;
   margin: auto;
-  padding: 0 25px;
+  padding: 0;
 }
 
 .contact-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 40px;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 20px;
   align-items: start;
   background: #0A2540;
   border-radius: 20px;
@@ -55,32 +55,28 @@
 
 .contact-icon {
   width: 60px;
-  line-height: 1.7;
-  border-radius: 16px;
-  background: #E8F8F4;
+  line-height: 2.7; 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+  float:left;
 }
+ 
 
-  .contact-icon svg {
-    color: #0E7C7B;
-  }
-
-.contact-card h3 {
+.contact-info h3 {
   font-size: 15px;
   height: auto;
   color: #D9E5EC;
   font-family: "Fraunces",serif;
-  line-height: 1.7;
+  line-height: 2.7;
+  padding:0;
 }
 
-.contact-card p {
+.contact-info p {
   color: #5B6979;
   font-size: 15px;
   line-height: 1.7;
-  padding:0;
 }
 
 
@@ -90,16 +86,16 @@
 
 .contact-form {
   background: #0A2540;
-  padding: 40px;
+  padding: 2px;
   border-radius: 24px;
-  border: 1px solid #b7b7b7;
-  box-shadow: 0 15px 40px rgba(0,0,0,.05); 
+  border: 1px solid #1c3b62;
+  box-shadow: 0 15px 40px rgba(0,0,0,.05);
 }
 
   .contact-form h3 {
     font-size: 32px;
     color: #0A2540;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-family: "Fraunces",serif;
     color:white;
   }
@@ -258,25 +254,28 @@
 }
 
 
-@media (max-width:576px) {
+@media (max-width:480px) {
 
   .contact-wrapper {
-    gap: 35px;
-    margin-top: 50px;
+    gap: 22px;
+    margin-top:2px;
   }
 
+    .contact-grid h1, h3, h5 {   
+      padding:5px 0px 5px 0px;
+    }  
+
   .contact-form {
-    padding: 22px;
+    padding: 5px;
     border-radius: 18px;
   }
 
     .contact-form h3 {
       font-size: 24px;
-      margin-bottom: 20px;
     }
 
   .contact-card {
-    padding: 20px;
+    padding:0;
     gap: 16px;
   }
 
@@ -284,6 +283,7 @@
     width: 50px;
     height: 50px;
     border-radius: 14px;
+    float:left;
   }
 
     .contact-icon svg {

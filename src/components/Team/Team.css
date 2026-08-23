@@ -6,6 +6,34 @@
 	padding: 100px 0;
 	background: #ffffff;
 }
+team-tag
+.team-header {
+  max-width: 820px;
+  margin: 0;
+  text-align: left;
+}
+
+.team-tag {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 30px;
+  background: #E8F8F4;
+  color: #0E7C7B;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+  .team-header h2 {
+    margin: 0;
+  }
+
+.team p {
+  max-width: 720px;
+  margin: 0;
+}
 
 
 /* =========================================
@@ -47,40 +75,53 @@
 
 .founder-content {
 	width: 100%;
+    text-align:left;
 }
 
 .leader-tag {
 	display: inline-block;
 	background: #E9F8F4;
 	color: #0E7C7B;
-	padding: 8px 18px;
+	padding: 8px 0px;
 	border-radius: 30px;
 	font-size: 13px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	margin-bottom: 18px;
+	margin-bottom: 18px;   
+}
+founder-content
+.leader-tag {
+  max-width: 820px;
+  margin: 0;
+  text-align: left;
 }
 
 .founder-content h3 {
-	font-size: 42px;
-	color: #0A2540;
-	margin-bottom: 10px;
-	font-family: "Fraunces",serif;
+  font-size: 42px;
+  color: #0A2540;
+  margin-bottom: 10px;
+  font-family: "Fraunces",serif;
+  text-align: left;
+  padding: 0;
 }
 
 .founder-content h5 {
-	color: #15A38C;
-	font-size: 22px;
-	margin-bottom: 28px;
-	font-weight: 600;
+  color: #15A38C;
+  font-size: 22px;
+  margin-bottom: 28px;
+  font-weight: 600;
+  text-align: left;
+  padding:0;
 }
 
 .founder-content p {
-	color: #5D6B7A;
-	line-height: 1.9;
-	font-size: 17px;
-	margin-bottom: 18px;
+  color: #5D6B7A;
+  line-height: 1.9;
+  font-size: 17px;
+  margin-bottom: 18px;
+  text-align: left;
+  padding: 0;
 }
 
 
@@ -126,27 +167,28 @@
    DISCIPLINES
 ========================================= */
 
-```css
+
 /* ==========================================
    MULTIDISCIPLINARY TEAM
 ========================================== */
 .team-strip {
   width: 100%;
   margin-top: 44px;
+  text-align:left;
 }
 
 /* Section heading */
-.team-strip h4 {
-  margin: 0 0 22px;
-  color: #526579;
-  font-family: "Inter", sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  line-height: 1.4;
-  text-align: center;
-  text-transform: uppercase;
-}
+  .team-strip h4 {
+    margin: 0 0 22px;
+    color: #526579;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    line-height: 1.4;
+    text-align: left;
+    text-transform: uppercase;
+  }
 
 
 /* ==========================================
@@ -241,7 +283,7 @@
 
     .team-strip h4 {
       margin-bottom: 18px;
-      font-size: 13px;
+      font-size: 11px;
     }
 
   .disc-grid {
@@ -525,6 +567,10 @@
 		padding: 80px 0;
 	}
 
+  .team-header {
+    margin-bottom: 60px;
+  }
+
 	.founder-content h3 {
 		font-size: 32px;
 	}
@@ -548,10 +594,13 @@
 	.advisor-grid {
 		grid-template-columns: 1fr;
 	}
+  .disc-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
 
 	.team-strip h4,
 	.advisor-section h4 {
-		font-size: 28px;
+		font-size: 16px;
 	}
 }
 
@@ -563,9 +612,14 @@
 		margin-bottom: 70px;
 	}
 
-	.leader-tag {
-		font-size: 11px;
-	}
+  .team-tag {
+    font-size: 11px;
+    letter-spacing: 1px;
+  } 
+
+  .leader-tag {
+    font-size: 11px;
+  }
 
 	.founder-content h3 {
 		font-size: 28px;

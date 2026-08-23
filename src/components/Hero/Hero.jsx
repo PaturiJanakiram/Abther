@@ -5,8 +5,7 @@ import heroImage from "../../assets/images/hero-device.png";
 
 const Hero = () => {
     return (
-        <section className="hero">          
-        
+        <section className="hero">        
             <div className="container hero-grid">            
                 <div className="hero-left">         
                 {/*    <Maintanance/>*/}
@@ -24,7 +23,6 @@ const Hero = () => {
                     </p>
 
                     <div className="hero-buttons">
-
                         <button className="btn-primary">
                             Explore Science
                         </button>

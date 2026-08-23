@@ -88,9 +88,9 @@ export default function Investors() {
     >
       <div className="container">
 
-        <div className="section-header center">
+        <div className="investors-header center">
 
-          <span className="section-tag gold">
+          <span className="investors-tag gold">
             For Investors & Partners
           </span>
 

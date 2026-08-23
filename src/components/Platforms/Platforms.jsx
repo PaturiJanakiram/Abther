@@ -73,8 +73,8 @@ export default function Platforms() {
   return (
     <section id="platforms"  className="platforms-section">
       <div className="container">
-        <div className="section-header center">
-          <span className="section-tag">
+        <div className="platform-header">
+          <span className="platform-tag">
             What We Do
           </span>
           <h2>

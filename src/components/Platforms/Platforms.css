@@ -7,19 +7,19 @@
   background: #ffffff;
 }
 
-.section-header.center {
+.platform-header {
   max-width: 820px;
-  margin: 0 auto 80px;
-  text-align: center;
+  margin:0;
+  text-align: left;
 }
 
-  .section-header.center h2 {
-    margin: 18px 0 20px;
+  .platform-header h2 {
+    margin: 0;
   }
 
-  .section-header.center p {
+  .platform-header p {
     max-width: 720px;
-    margin: auto;
+    margin: 0;
   }
 
 
@@ -291,7 +291,7 @@
     padding: 80px 0;
   }
 
-  .section-header.center {
+  .platform-header {
     margin-bottom: 60px;
   }
 
