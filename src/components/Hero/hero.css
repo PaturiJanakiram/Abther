@@ -139,13 +139,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow:hidden;
 }
 
     .hero-right img {
         width: 100%;
-        max-width: 420px;
+        max-width: 450px;
+        height:450px;
         border-radius: 25px;
-        box-shadow: 0 25px 60px rgba(0,0,0,.15);
+        box-shadow: 0 25px 60px rgba(0,0,0,.15);        
     }
 
 /* ==========================================
@@ -204,22 +206,23 @@
 
 .floating-card.top {
   top: 30px;
-  left: 57px;
+  left: 41px;
   border-radius: 0 16px 16px 0px;
 }
 
 .floating-card.right {
-  right: 58px;
+  right: 41px;
   bottom: 110px;
   animation-delay: .7s;
   border-radius: 16px 0px 0px 16px;
 }
 
 .floating-card.bottom {
-  bottom: -11px;
+  position: absolute;
+  bottom: -13px;
   left: 90px;
   animation-delay: 1.4s;
-  border-radius: 16px 16px 0px 0px; 
+  border-radius: 16px 16px 0px 0px;
 }
 
 /* Floating animation */
@@ -349,6 +352,9 @@
     .hero-right {
       margin: 0px;
     }
+      .hero-right img {     
+        height: 300px;       
+      }
 
   .hero-buttons {
     flex-direction: column;
@@ -379,11 +385,11 @@
 
       .floating-card.top {
         top: 35px;
-        left: 1px;
+        left: 0px;
       }
 
       .floating-card.right {
-        right: 2px;
+        right: 0px;
         bottom: 80px;
       }
 
