@@ -42,7 +42,7 @@ team-tag
 
 .founder-card {
 	display: grid;
-	grid-template-columns: 420px 1fr;
+	grid-template-columns: 500px 1fr;
 	gap: 60px;
 	align-items: center;
 	margin-top: 60px;
@@ -67,6 +67,8 @@ team-tag
     margin: 0;
     padding: 0;
     object-position: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
 
 		.founder-image img:hover {
@@ -347,7 +349,7 @@ founder-content
 .advisor-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
@@ -358,18 +360,22 @@ founder-content
 
 .advisor-card {
   min-height: 150px;
-  padding: 22px 24px;
+  padding: 15px 18px;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.10);
   border-radius: 14px;
   transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 
-
+  .advisor-card img{
+      width:100%;
+      border-radius:100px;
+      height:150px;     
+     
+  }
   /* ==========================================
    HOVER
 ========================================== */
-
   .advisor-card:hover {
     background: rgba(255, 255, 255, 0.08);
     border-color: rgba(201, 162, 75, 0.35);
@@ -382,10 +388,10 @@ founder-content
 ========================================== */
 
   .advisor-card h3 {
-    margin: 0 0 7px;
+    margin: 0 0 2px;    
     color: #FFFFFF;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 600;
     line-height: 1.3;
   }
@@ -626,7 +632,7 @@ founder-content
 	}
 
 	.founder-image img {
-		border-radius: 18px;
+		border-radius: 20px;        
 	}
 
 	.credential-card {
@@ -637,9 +643,20 @@ founder-content
 		padding: 28px 20px;
 	}
 
+  .advisor-grid {    
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+
 	.advisor-card {
-		padding: 30px 22px;
+		padding: 5px;
 	}
+    .advisor-card img {
+     margin:0;
+     padding:0;
+     height:120px;
+    }
+
   .advisor-section h4 {
     font-size: 18px;
   }

@@ -1,4 +1,5 @@
 import "./HowItWorks.css";
+import BloodCapsule from "../../images/howitworks/BloodCapsule.png";
 
 const steps = [
   {
@@ -40,6 +41,7 @@ export default function HowItWorks() {
           <h2>
             From a drop of blood to an answer — in four steps
           </h2>
+          <img src={BloodCapsule } alt="Blood Capsule" className="blood-capsule"/>
         </div>
 
         <div className="steps">

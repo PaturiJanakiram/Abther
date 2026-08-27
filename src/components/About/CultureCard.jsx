@@ -3,9 +3,9 @@ import React from "react";
 const CultureCard = ({ icon, title, description }) => {
   return (
     <div className="culture-card">
-      <div className="culture-icon">
-        <span>{icon}</span>
-      </div>
+      
+        <img src={icon} alt="" />
+     
 
       <h3>{title}</h3>
 

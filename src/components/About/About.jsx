@@ -3,22 +3,26 @@ import CultureCard from "./CultureCard";
 import ValueCard from "./ValueCard";
 import MissionVision from "./MissionVision";
 import AboutBanner from "../../images/about/AboutBanner.png";
+import AboutCoffee from "../../images/about/AboutCoffee.png";
+import AboutIdeas from "../../images/about/AboutIdeas.png";
+import AboutGImpact from "../../images/about/AboutGImpact.png";
+import PeopleFirst from "../../images/about/PeopleFirst.png";
 
 const cultureData = [
   {
-    icon: "☕",
+    icon: AboutCoffee,
     title: "Curiosity, over coffee",
     description:
       "Our best breakthroughs start as questions across a lab bench. Every voice shapes the science—we solve problems in conversation, not in silos."
   },
   {
-    icon: "💡",
+    icon: AboutIdeas,
     title: "Bold ideas, real rigour",
     description:
       "We move fast and validate hard. A high-energy environment where ambitious ideas are welcomed—and then held to the highest scientific standard."
   },
   {
-    icon: "🌍",
+    icon: AboutGImpact,
     title: "Global impact, local roots",
     description:
       "Anchored in Visakhapatnam, building for the world. We measure success by the patients reached, not just the papers published."
@@ -120,6 +124,7 @@ export default function About() {
             <h2>
               Our values guide every decision
             </h2>
+            <img src={ PeopleFirst } alt="People First" className="PeopleValue"/>
           </div>
 
           <div className="values-grid">

@@ -1,7 +1,11 @@
 import "./Team.css";
 import TeamCard from "./TeamCard";
 import AdvisorCard from "./AdvisorCard";
-import {  Microscope,  Dna,  BrainCircuit,  Stethoscope,  FileCheck,  Handshake } from "lucide-react";
+import { Microscope, Dna, BrainCircuit, Stethoscope, FileCheck, Handshake } from "lucide-react";
+import Adv1 from "../../images/team/Adv1.PNG";
+import Adv2 from "../../images/team/Adv2.png";
+import Adv3 from "../../images/team/Adv3.png";
+import Adv4 from "../../images/team/Adv4.png";
 
 const disciplines = [
   {
@@ -32,19 +36,28 @@ const disciplines = [
 
 const advisors = [
   {
+    adv: Adv1,
     name: "Prof. D. Narasimha Rao",
     role:
       "Honorary Professor, Indian Institute of Science (IISc), Bangalore — molecular biology & biochemistry"
   },
   {
+    adv: Adv2,
     name: "Dr. Madhusoodanan U. K.",
     role:
       "Sree Chitra Tirunal Institute for Medical Sciences & Technology (SCTIMST) — medical diagnostics research"
   },
   {
+    adv: Adv3,
     name: "Dr. Ramarao",
     role:
       "Central University of Tamil Nadu (CUTN) — research sciences & co-investigator"
+  },
+  {
+    adv: Adv4,
+    name: "Dr. Manashjit Gogoi",
+    role:
+      "Department of Biomedical Engineering, North-Eastern Hill University (NEHU) — bionanotechnology, biosensors & magnetic nanoparticles"
   }
 ];
 

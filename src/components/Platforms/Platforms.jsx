@@ -1,6 +1,6 @@
 import "./Platforms.css";
 import PlatformCard from "./PlatformCard";
-import diagnosticsDevice from "../../images/platforms/diagnostics-device.png";
+import diagnosticsDevice from "../../images/platforms/diagnostics-device.jpg";
 import adcplatform from "../../images/platforms/adc-platform.png";
 
 

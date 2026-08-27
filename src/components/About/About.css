@@ -55,6 +55,17 @@
   border-radius: 20px;
   margin-top: 30px;
 }
+.about-header .PeopleValue {
+  height: 300px;
+  width: 100%;
+  border-radius: 20px;  
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  padding:5px;
+}
+
 
 /* =========================================
    CULTURE
@@ -82,8 +93,8 @@
   background: #fff;
   border: 1px solid #E5EAF1;
   border-radius: 18px;
-  padding: 38px 32px;
-  transition: .35s;
+  padding: 0;
+  transition: .35s;  
 }
 
   .culture-card:hover {
@@ -91,17 +102,16 @@
     box-shadow: 0 18px 35px rgba(0,0,0,.08);
   }
 
-.culture-icon {
-  width: 65px;
-  height: 65px;
-  border-radius: 18px;
-  background: #E7F6F3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  margin-bottom: 25px;
-}
+  .culture-card img {
+    height: 200px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: block;
+    width: 100%; 
+    max-width: 100%;
+    object-fit: cover;   
+  }
 
 .culture-card h3 {
   color: #0A2540;
@@ -130,7 +140,7 @@
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 25px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .value-card {
@@ -138,7 +148,7 @@
   background: #fff;
   border: 1px solid #E5EAF1;
   border-radius: 18px;
-  padding: 35px 30px;
+  padding: 20px;
   overflow: hidden;
   transition: .35s;
 }
@@ -335,27 +345,29 @@
   .about-header .about-banner {  
     height: 350px;   
   }
-  
-  .culture-icon {
-    width: 55px;
-    height: 55px;
-    font-size: 26px;
- 
-   
-    margin-right:5px;
-    float:left;
+
+  .about-header .PeopleValue {
+    height: 200px;   
+  }
+
+  .culture-card{
+      padding:0;margin:0;
+  }
+
+  .culture-card img {
+    height: 200px;
   }
 
   .culture-card h3,
   .value-card h3 {
     font-size: 20px;
-    padding: 0;
+    padding: 2px;
     margin-top: 10px;
   }
-  .culture-card p{
-      margin-top:47px;    
-    
-  }
+    .culture-card p {
+      margin-top: 20px;
+      padding: 2px;
+    }
 
   .mission-card p,
   .vision-card p {

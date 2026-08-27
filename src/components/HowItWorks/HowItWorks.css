@@ -18,8 +18,7 @@
    HEADER
 ========================================== */
 
-.how-header {
-  max-width: 640px;
+.how-header {  
   margin-bottom: 56px;
 }
 
@@ -40,11 +39,21 @@
   line-height: 1.15;
   letter-spacing: -0.02em;
 }
-
+.how-header .blood-capsule {
+  height: 300px;
+  width: 100%;
+  border-radius: 20px;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  padding: 5px;
+  margin-top:20px;
+  z-index:2;
+}
 /* ==========================================
    STEPS
 ========================================== */
-
 .steps {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -174,6 +183,9 @@
   .how-header {
     margin-bottom: 40px;
   }
+    .how-header .blood-capsule{
+        height:200px;
+    }
 
     .how-header h2 {
       font-size: 30px;
