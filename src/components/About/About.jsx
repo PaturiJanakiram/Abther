@@ -2,6 +2,7 @@ import "./About.css";
 import CultureCard from "./CultureCard";
 import ValueCard from "./ValueCard";
 import MissionVision from "./MissionVision";
+import AboutBanner from "../../images/about/AboutBanner.png";
 
 const cultureData = [
   {
@@ -88,6 +89,7 @@ export default function About() {
               medicine—turning frontier science into tools that work in the
               real world, from tertiary hospitals to the most remote clinic.
             </p>
+            <img src={AboutBanner} alt="About Banner" className="about-banner"/>
           </div>
 
           {/* Culture */}
