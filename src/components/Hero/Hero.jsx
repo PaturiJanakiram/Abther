@@ -24,11 +24,11 @@ const Hero = () => {
 
                     <div className="hero-buttons">
                         <button className="btn-primary">
-                            Explore Science
+                            Explore our science
                         </button>
 
                         <button className="btn-outline">
-                             Investors
+                             For Investors & Partners
                         </button>
 
                     </div>

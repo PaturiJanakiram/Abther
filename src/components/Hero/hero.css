@@ -60,6 +60,9 @@
     max-width: 560px;
     margin-bottom: 35px;
 }
+.hero-left div {
+  max-width: 560px;
+}
 
 /* ==========================================
    BUTTONS
@@ -111,23 +114,26 @@
 ========================================== */
 
 .hero-stats {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 30px;
+
+  
 }
 
 .stat-card h2 {
-    color: #0E7C7B;
-    font-size: 42px;
-    font-weight: 700;
-    margin-bottom: 8px;
+  color: #0E7C7B;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  max-width: 560px;
 }
 
 .stat-card p {
-    font-size: 14px;
-    color: #667788;
-    line-height: 1.5;
-    margin: 0;
+  font-size: 14px;
+  color: #667788;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 560px;
 }
 
 /* ==========================================

@@ -368,10 +368,10 @@ founder-content
 }
 
   .advisor-card img{
-      width:100%;
+      width:100px;
       border-radius:100px;
-      height:150px;     
-     
+      height:100px;
+      margin-left:50px;
   }
   /* ==========================================
    HOVER

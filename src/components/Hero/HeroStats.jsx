@@ -4,17 +4,17 @@ const HeroStats = () => {
 
         {
             number: "40+",
-            title: "Diseases"
+            title: "Diseases screened from a few drops of blood"
         },
 
         {
-            number: "15 Min",
-            title: "Result Time"
+            number: "<15min",
+            title: "To result — no laboratory needed"
         },
 
         {
             number: "2",
-            title: "Platforms"
+            title: "Synergistic platforms: diagnostics + therapeutics"
         }
 
     ]
@@ -27,8 +27,7 @@ const HeroStats = () => {
 
                 <div
                     key={index}
-                    className="stat-card"
-                >
+                    className="stat-card">
 
                     <h2>{item.number}</h2>
 
