@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import logo from "../../assets/logo/logo.png";
 import { FaBars, FaTimes } from "react-icons/fa";
+import abthertimg from "../../assets/logo/abthertimg.png";
 
 const menuItems = [
     { name: "About", id: "about" },
@@ -58,12 +59,8 @@ function Navbar() {
                         className="logo-img"
                     />
 
-                    <div className="logo-content">
-
-                        <h2 className="logo-title">
-                            AbTher Biotech
-                        </h2>
-
+                    <div className="logo-content">                       
+                          <img src={abthertimg} alt="Abther"/>
                         <p className="logo-subtitle">
                             Precision Diagnostics &amp; Therapeutics
                         </p>

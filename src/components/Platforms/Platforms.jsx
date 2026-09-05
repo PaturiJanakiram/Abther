@@ -74,7 +74,7 @@ export default function Platforms() {
     <section id="platforms"  className="platforms-section">
       <div className="container">
         <div className="platform-header">
-          <span className="platform-tag">
+          <span className="platform-title">
             What We Do
           </span>
           <h2>

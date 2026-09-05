@@ -339,10 +339,10 @@
 ========================================== */
 
 @media (max-width:480px) {
-
-  .hero-grid {  
+  
+  .hero-grid {
     margin: 0;
-    padding: 0;   
+    padding: 0;
   }
 
     .hero-left h1 {
@@ -356,10 +356,11 @@
       margin: 0px;
     }
     .hero-right {
-      margin: 0px;
+      margin: 0px;      
     }
       .hero-right img {     
-        height: 300px;       
+        height: 300px;
+        
       }
 
   .hero-buttons {

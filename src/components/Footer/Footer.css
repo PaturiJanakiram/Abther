@@ -17,11 +17,14 @@
   border-bottom: 1px solid rgba(255, 255, 255, .08);
 }
 
-.foot-brand .fb {
+.foot-brand .fb img {
   display: flex;
   align-items: center;
   gap: 12px;
   margin-bottom: 16px;
+  border-radius:5px;
+  width:70px;
+  height:35px;
 }
 
   .foot-brand .fb .m {

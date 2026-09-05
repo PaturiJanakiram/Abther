@@ -1,6 +1,7 @@
 // Footer.jsx
 import React from "react";
 import "./Footer.css";
+import flogo from "../../images/footer/flogo.png";
 
 const Footer = () => {
   return (
@@ -9,18 +10,7 @@ const Footer = () => {
         <div className="foot-top">
           <div className="foot-brand">
             <div className="fb">
-              <div className="m">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M12 2C9 5 9 8 12 11C15 8 15 5 12 2Z"
-                    fill="#fff"
-                  />
-                  <circle cx="7" cy="15" r="3.4" fill="#fff" opacity=".85" />
-                  <circle cx="17" cy="15" r="3.4" fill="#fff" opacity=".7" />
-                  <circle cx="12" cy="19" r="3" fill="#fff" />
-                </svg>
-              </div>
-              <div className="n">AbTher Biotech</div>
+              <img src={flogo} alt="flogo" />             
             </div>
             <p>
               Precision diagnostics and antibody & ADC therapeutics — engineered in India, designed for the world. Democratising access to fast, accurate, affordable healthcare.

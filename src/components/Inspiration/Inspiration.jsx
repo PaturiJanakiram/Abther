@@ -1,34 +1,38 @@
 
 import "./Inspiration.css";
 import InspirationCard from "./InspirationCard";
+import insp1 from "../../images/Inspiration/insp1.png";
+import insp2 from "../../images/Inspiration/insp2.png";
+import insp3 from "../../images/Inspiration/insp3.png";
+
 
 const stories = [
   {
-    id: "01",
-    type: "insp-1",
+    id: "01",   
     title: "The frontline nurse",
     description:
-      "Diagnosing faster and more confidently with a handheld device — reaching patients who would otherwise wait days for a result that may never come."
+      "Diagnosing faster and more confidently with a handheld device — reaching patients who would otherwise wait days for a result that may never come.",
+    photo:insp1
   },
   {
-    id: "02",
-    type: "insp-2",
+    id: "02",   
     title: "The patient with cancer",
     description:
-      "Receiving precise, targeted therapy closer to home — with less systemic toxicity and at a cost their family can sustain."
+      "Receiving precise, targeted therapy closer to home — with less systemic toxicity and at a cost their family can sustain.",
+    photo: insp2
   },
   {
-    id: "03",
-    type: "insp-3",
+    id: "03",   
     title: "The community that gains access",
     description:
-      "Where early diagnosis becomes a right, not a privilege — and geography no longer decides the quality of care a person receives."
+      "Where early diagnosis becomes a right, not a privilege — and geography no longer decides the quality of care a person receives.",
+    photo: insp3
   }
 ];
 
 export default function Inspiration() {
   return (
-    <section className="inspiration">
+    <section className="inspiration-section">
 
       <div className="container">
 

@@ -7,22 +7,35 @@
   background: #F8FAFC;
 }
 .investors-header {
-  max-width: 820px;
-  margin: 0;
+  width: 100%;
+  max-width: none;
+  margin-bottom: 60px;
   text-align: left;
 }
+  .investors-header h2 {
+    font-size: 48px;
+    color: #0A2540;
+    line-height: 1.15;
+    margin-bottom: 22px;
+    font-family: "Fraunces",serif;
+    text-align: left;
+  }
+
+  .investors-header p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #566273;
+    text-align: left;
+  }
 
 .investors-tag {
   display: inline-block;
-  padding: 8px 18px;
-  border-radius: 30px;
-  background: #E8F8F4;
   color: #0E7C7B;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   font-size: 13px;
   font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 /* =========================================

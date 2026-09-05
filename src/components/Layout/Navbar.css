@@ -7,6 +7,17 @@
 html {
     scroll-behavior: smooth;
 }
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 .navbar {
     width: 100%;
@@ -55,17 +66,21 @@ html {
     justify-content: center;
 }
 
-.logo-title {
+  .logo-content img{
+      width:90px;
+      height:30px;
+  }
+
+  .logo-title {
     margin: 0;
     font-size: 18px;
     font-weight: bolder;
     color: #0c113c;
     line-height: 1.1;
     font-family: Georgia, "Times New Roman", serif;
-    letter-spacing:-0.1px;
-    opacity:1.5;
-    
-}
+    letter-spacing: -0.1px;
+    opacity: 1.5;
+  }
 
 .logo-subtitle {
     margin: 2px 0 0;
