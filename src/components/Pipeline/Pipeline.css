@@ -1,0 +1,213 @@
+
+/* ==========================================
+   pipeline / POSITIONING
+========================================== */
+.pipeline {
+  padding: 100px 0;
+  background: #f5f8fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.pipeline-header {
+  max-width: 720px;
+  margin-bottom: 56px;
+}
+
+.pipeline-eyebrow {
+  display: inline-block;
+  color: #0E7C7B;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.pipeline-header h2 {
+  margin: 0 0 18px;
+  color: #0A2540;
+  font-size: 42px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.pipeline-header p {
+  margin: 0;
+  color: #526579;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+.pipeline-header em {
+  color: #0A2540;
+}
+
+/* ==========================================
+   TABLE WRAPPER
+========================================== */
+
+.pipeline-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(10, 37, 64, 0.08);
+}
+
+/* ==========================================
+   TABLE
+========================================== */
+
+.pipeline-table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #ffffff;
+  border: 1px solid #dce5eb;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+  /* ==========================================
+   HEADER CELLS
+========================================== */
+
+  .pipeline-table th {
+    padding: 18px 20px;
+    background: #0A2540;
+    color: #ffffff;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 1px solid #dce5eb;
+  }
+
+    .pipeline-table th.pipeline-highlight {
+      background: linear-gradient( 135deg, #0E7C7B 0%, #12A594 100% );
+    }
+
+  /* ==========================================
+   BODY CELLS
+========================================== */
+
+  .pipeline-table td {
+    padding: 18px 20px;
+    color: #526579;
+    text-align: left;
+    font-size: 15px;
+    border-bottom: 1px solid #dce5eb;
+    background: #ffffff;
+  }
+
+    .pipeline-table td:first-child {
+      color: #0A2540;
+      font-weight: 600;
+    }
+
+    /* ==========================================
+   ABTHER COLUMN
+========================================== */
+
+    .pipeline-table td.pipeline-abther {
+      background: #e5f6f4;
+      color: #0E7C7B;
+      font-weight: 600;
+    }
+
+  /* ==========================================
+   ALTERNATING ROWS
+========================================== */
+
+  .pipeline-table tbody tr:nth-child(even) td:not(.pipeline-abther) {
+    background: #f5f8fa;
+  }
+
+  /* ==========================================
+   LAST ROW
+========================================== */
+
+  .pipeline-table tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+/* ==========================================
+   NOTE
+========================================== */
+
+.pipeline-note {
+  margin: 18px 0 0;
+  color: #7b8b9b;
+  font-size: 14px;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 960px) {
+
+  .pipeline {
+    padding: 64px 0;
+  }
+
+  .pipeline-header h2 {
+    font-size: 32px;
+  }
+
+  .pipeline-header p {
+    font-size: 17px;
+  }
+
+  .pipeline-table th,
+  .pipeline-table td {
+    padding: 15px 16px;
+  }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 560px) {
+
+  .pipeline {
+    padding: 100px 0;    
+  }
+
+  .pipeline-header {
+    margin-bottom: 40px;
+  }
+
+    .pipeline-header h2 {
+      font-size: 30px;
+    }
+
+    .pipeline-header p {
+      font-size: 16px;
+    }
+
+  .pipeline-table {
+    min-width: 700px;
+  }
+
+    .pipeline-table th,
+    .pipeline-table td {
+      padding: 14px;
+      font-size: 13px;
+    }
+
+  .pipeline-note {
+    font-size: 12px;
+  }
+}

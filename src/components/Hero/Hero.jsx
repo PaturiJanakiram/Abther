@@ -9,9 +9,11 @@ const Hero = () => {
             <div className="container hero-grid">            
                 <div className="hero-left">         
                 {/*    <Maintanance/>*/}
-                    <span className="hero-badge">
-                        Deep Science Biotech . Visakhapatnam
-                    </span>
+                 <div className="hero-badge">
+                      <span class="pulse">
+                      </span>
+                       <span data-ae="t16" contenteditable="true">Deep Science Biotech . Visakhapatnam</span>
+                  </div>
 
                     <h1>
                         Precision Medicine,

@@ -21,6 +21,7 @@ const Footer = () => {
             <h5>EXPLORE</h5>
             <a href="#about">About</a>
             <a href="#platforms">Platforms</a>
+            <a href="#pipeline">Pipeline</a>
             <a href="#team">Team</a>
             <a href="#impact">Impact</a>
           </div>

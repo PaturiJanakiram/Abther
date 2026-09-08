@@ -29,17 +29,47 @@
 }
 
 .hero-badge {
-    display: inline-block;
-    width: fit-content;
-    background: #EAF8F6;
-    color: #0E7C7B;
-    border: 1px solid #BDEAE5;
-    border-radius: 30px;
-    padding: 8px 18px;
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 25px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  background: var(--teal-lt);
+  border: 1px solid rgba(14,124,123,.18);
+  border-radius: 30px;
+  padding: 7px 16px;
+  margin-bottom: 26px;
+  width:60%;
 }
+
+  .hero-badge .pulse {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--teal-br);
+    box-shadow: 0 0 0 0 rgba(18,165,148,.5);
+    animation: pulse 2.2s infinite
+  }
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(18,165,148,.5)
+  }
+
+  70% {
+    box-shadow: 0 0 0 8px rgba(18,165,148,0)
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(18,165,148,0)
+  }
+}
+
+.hero-badge span {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--teal);
+  letter-spacing: .02em
+}
+
 
 .hero-left h1 {
     font-size: 58px;
@@ -343,6 +373,10 @@
   .hero-grid {
     margin: 0;
     padding: 0;
+  }
+
+  .hero-badge {  
+    width: 100%;
   }
 
     .hero-left h1 {

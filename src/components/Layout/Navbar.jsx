@@ -6,7 +6,8 @@ import abthertimg from "../../assets/logo/abthertimg.png";
 
 const menuItems = [
     { name: "About", id: "about" },
-    { name: "Platforms", id: "platforms" },   
+    { name: "Platforms", id: "platforms" },
+    { name: "Pipeline", id: "pipeline" },
     { name: "Team", id: "team" },
     { name: "Impact", id: "impact" },
     { name: "Investors", id: "investors" },  
@@ -62,7 +63,7 @@ function Navbar() {
                     <div className="logo-content">                       
                           <img src={abthertimg} alt="Abther"/>
                         <p className="logo-subtitle">
-                            Precision Diagnostics &amp; Therapeutics
+                          Precision Diagnostics & Therapeutics
                         </p>
 
                     </div>

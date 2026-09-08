@@ -3,6 +3,7 @@ import Navbar from "./components/Layout/Navbar";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Platforms from "./components/Platforms/Platforms";
+import Pipeline from "./components/Pipeline/Pipeline";
 import HowItWorks from "./components/HowItWorks/HowItWorks";
 import Impact from "./components/Impact/Impact";
 import Team from "./components/Team/Team";
@@ -31,6 +32,8 @@ function App() {
         <section id="about"><About/></section>
 
         <section id="platforms"><Platforms /></section>
+
+        <section id="pipeline"><Pipeline /></section>
 
         <section id="how-it-works"><HowItWorks /></section>
 
