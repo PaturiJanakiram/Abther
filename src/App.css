@@ -52,6 +52,18 @@
   background: var(--paper);
 }
 
+:root {
+  --header-height: 80px;
+}
+
+.page-content {
+  padding-top: var(--header-height);
+}
+
+.page-section {
+  scroll-margin-top: calc(var(--header-height) + 20px);
+  padding: 20px 0px;
+}
 
 /* ==========================================
    MAIN CONTENT

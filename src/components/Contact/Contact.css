@@ -5,14 +5,8 @@
 ========================================= */
 
 .contact-section {
-  padding:100px 0;
+  padding:0;
   background: #0A2540;
-}
-
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0;
 }
 
 .contact-wrapper {
@@ -36,16 +30,22 @@
   margin-top:5px;
 }
 
-.contact-grid h1,h3,h5{
+.contact-grid h1,h3{
  color:white;
  padding:15px;
  line-height:35px;
-}  
 
-.contact-card {
-  border-radius: 20px;
-  transition: .35s;
 }
+  .contact-grid h5 {
+    color: white;
+    padding: 15px;
+    font-size:15px;
+  }
+
+  .contact-card {
+    border-radius: 20px;
+    transition: .35s;
+  }
 
   .contact-card:hover {
     transform: translateY(-6px);

@@ -3,7 +3,7 @@
 ========================================= */
 
 .investors-section {
-  padding: 100px 0;
+  padding:0;
   background: #F8FAFC;
 }
 .investors-header {
@@ -33,7 +33,7 @@
   color: #0E7C7B;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   margin-bottom: 18px;
 }

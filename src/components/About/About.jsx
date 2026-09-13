@@ -83,15 +83,7 @@ export default function About() {
             </h2>
 
             <p>
-              AbTher Biotech is a research-driven biotechnology company
-              advancing two complementary platforms: rapid AI-powered
-              diagnostics and precision antibody &amp; antibody-drug conjugate
-              (ADC) therapeutics.
-
-              Our team combines nearly two decades of international experience
-              in antibody discovery, cancer immunotherapy and translational
-              medicine—turning frontier science into tools that work in the
-              real world, from tertiary hospitals to the most remote clinic.
+              AbTher is a research-driven biotechnology company advancing two complementary platforms: rapid, AI-powered diagnostics and precision antibody & antibody–drug conjugate (ADC) therapeutics. Our team combines nearly two decades of international experience in antibody discovery, cancer immunotherapy, and translational medicine turning frontier science into tools that work in the real world, from tertiary hospitals to the most remote clinic.
             </p>
             <img src={AboutBanner} alt="About Banner" className="about-banner"/>
           </div>

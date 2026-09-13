@@ -29,23 +29,23 @@ function App() {
 
         <Hero/>
 
-        <section id="about"><About/></section>
+        <section id="about" className="page-section"><About/></section>
 
-        <section id="platforms"><Platforms /></section>
+        <section id="platforms" className="page-section"><Platforms /></section>
 
-        <section id="pipeline"><Pipeline /></section>
+        <section id="pipeline" className="page-section"><Pipeline /></section>
 
-        <section id="how-it-works"><HowItWorks /></section>
+        <section id="how-it-works" className="page-section"><HowItWorks /></section>
 
-        <section id="impact"><Impact /></section>
+        <section id="impact" className="page-section"><Impact /></section>
 
-        <section id="team"><Team /></section>    
+        <section id="team" className="page-section"><Team /></section>    
 
-        <section id="inspiration"> <Inspiration /></section>
+        <section id="inspiration" className="page-section"> <Inspiration /></section>
 
-        <section id="investors"><Investors /></section>
+        <section id="investors" className="page-section"><Investors /></section>
 
-        <section id="Contact"><Contact /></section>
+        <section id="contact" className="page-section"><Contact /></section>
 
         <Footer/>
       

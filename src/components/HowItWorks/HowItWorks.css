@@ -3,7 +3,7 @@
 ========================================== */
 .how-it-works {
   width: 100%;
-  padding: 50px 0;
+  padding:0;
   background: linear-gradient( 160deg, #0A2540 0%, #071a2e 100% );
   color: #ffffff;
 }
@@ -25,7 +25,7 @@
 .how-eyebrow {
   display: inline-block;
   color: #12A594;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
