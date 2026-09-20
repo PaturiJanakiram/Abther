@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Send } from "lucide-react";
 
-const ContactForm = () => {
+export default function ContactForm(){
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [status, setStatus] = useState("");
 
@@ -23,94 +23,93 @@ const ContactForm = () => {
       message: formData.get("message"),
     };
 
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    const responseText = await response.text();
+
+    let result = {};
+
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
-
-      const result = await response.json();
-
-      if (response.ok) {
-        setStatus("Message sent successfully!");
-        form.reset();
-      } else {
-        setStatus(result.message || "Unable to send message.");
-      }
+      result = responseText ? JSON.parse(responseText) : {};
     } catch (error) {
-      console.error("Contact form error:", error);
-      setStatus("Something went wrong. Please try again.");
-    } finally {
-      setIsSubmitting(false);
+      console.error("Invalid API response:", responseText);
     }
-  };
 
-  return (
-    <form className="contact-form" onSubmit={handleSubmit}>
-      <h3>Send us a message</h3>
+    if (response.ok) {
+      setStatus(result.message || "Message sent successfully!");
+      form.reset();
+    } else {
+      setStatus(result.message || "Unable to send message.");
+    }
+  }
 
-      <div className="form-group">
-        <input
-          type="text"
-          name="name"
-          placeholder="Your Name"
-          required
-        />
-      </div>
+    return (
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <h3>Send us a message</h3>
 
-      <div className="form-group">
-        <input
-          type="email"
-          name="email"
-          placeholder="Email Address"
-          required
-        />
-      </div>
+        <div className="form-group">
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+        </div>
 
-      <div className="form-group">
-        <input
-          type="text"
-          name="organization"
-          placeholder="Organization"
-        />
-      </div>
+        <div className="form-group">
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
+        </div>
 
-      <div className="form-group">
-        <input
-          type="text"
-          name="subject"
-          placeholder="Subject"
-        />
-      </div>
+        <div className="form-group">
+          <input
+            type="text"
+            name="organization"
+            placeholder="Organization"
+          />
+        </div>
 
-      <div className="form-group">
-        <textarea
-          name="message"
-          rows="6"
-          placeholder="Your Message"
-          required
-        />
-      </div>
+        <div className="form-group">
+          <input
+            type="text"
+            name="subject"
+            placeholder="Subject"
+          />
+        </div>
 
-      <button
-        type="submit"
-        className="contact-btn"
-        disabled={isSubmitting}
-      >
-        {isSubmitting ? "Sending..." : "Send Message"}
-        {!isSubmitting && <Send size={18} />}
-      </button>
+        <div className="form-group">
+          <textarea
+            name="message"
+            rows="6"
+            placeholder="Your Message"
+            required
+          />
+        </div>
 
-      {status && (
-        <p className="contact-status">
-          {status}
-        </p>
-      )}
-    </form>
-  );
-};
+        <button
+          type="submit"
+          className="contact-btn"
+          disabled={isSubmitting}
+        >
+          {isSubmitting ? "Sending..." : "Send Message"}
+          {!isSubmitting && <Send size={18} />}
+        </button>
 
-export default ContactForm;
+        {status && (
+          <p className="contact-status">
+            {status}
+          </p>
+        )}
+      </form>
+    );
+  }
