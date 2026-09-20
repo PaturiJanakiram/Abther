@@ -514,6 +514,14 @@
 ========================================== */
 
 @media (max-width: 480px) {
+  :root {
+    --header-height: 20px;
+  }
+
+  .page-section {
+    scroll-margin-top: calc(var(--header-height) + 0px);
+    padding:0;
+  }
 
   .container {
     padding-left: 16px;
