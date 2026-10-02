@@ -17,7 +17,7 @@ export default function ContactForm(){
 
     const data = {
       name: formData.get("name"),
-      Organisation: formData.get("Organisation"),      
+      organisation: formData.get("organisation"),      
       email: formData.get("email"),
       phone: formData.get("phone"),
       intrestedon: formData.get("intrestedon"),
@@ -82,7 +82,7 @@ export default function ContactForm(){
           <span>
             <input
               type="text"
-              name="Organisation"
+              name="organisation"
               placeholder="Company/Institution"
               required
             />
@@ -131,7 +131,7 @@ export default function ContactForm(){
 
         <div className="form-group">
           <textarea
-            name="Message"
+            name="message"
             rows="6"
             placeholder="Tell us a little about your interest"
             required

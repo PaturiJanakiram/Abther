@@ -27,7 +27,7 @@ export default async function handler(req, res) {
       subject: `New Contact Form Submission - ${name}`,
       text: `
       Name: ${name}
-      Organisation:${Organisation}
+      organisation:${organisation}
       Email: ${email}
       Phone: ${phone}
       intrestedon:${intrestedon}
