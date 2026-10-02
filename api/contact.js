@@ -8,7 +8,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { name, email, phone, message } = req.body;
+    const { name, organisation, email, phone, intrestedon, message } = req.body;
 
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
@@ -24,13 +24,13 @@ export default async function handler(req, res) {
       from: `"Abther Website" <${process.env.GMAIL_USER}>`,
       to: "abther.biotech@gmail.com",
       replyTo: email,
-      subject: `New Contact Form Submission - ${name}`,
+      subject: `Thanks for Connecting with Abther - ${name}`,
       text: `
       Name: ${name}
       organisation:${organisation}
       Email: ${email}
       Phone: ${phone}
-      intrestedon:${intrestedon}
+      Intrestedon:${intrestedon}
       Message:${message}`,
     });
 

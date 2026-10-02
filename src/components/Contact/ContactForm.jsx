@@ -147,13 +147,11 @@ export default function ContactForm(){
           {!isSubmitting && <Send size={18} />}
         </button>       
         {status && (
-          <p className="contact-status">
+          <p style={{ color: "white", fontSize: "small" }}>
             {status}
           </p>
         )}
-        <p style={{ color: "white",fontSize:"small" }}>
-          Your message is sent securely to the AbTher team.
-        </p>
+        
       </form>
     );
   }
