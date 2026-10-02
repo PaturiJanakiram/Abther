@@ -78,6 +78,32 @@
   font-size: 15px;
   line-height: 1.7;
 }
+.form-group {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+
+  .form-group span {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+  }
+.form-control {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: white;
+  color: #333;
+  box-sizing: border-box;
+}
 
 
 /* =========================================
@@ -148,7 +174,7 @@
   padding: 18px;
   border: none;
   border-radius: 50px;
-  background: #0A2540;
+  background: #0E7C7B;
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
@@ -157,7 +183,7 @@
 }
 
   .contact-btn:hover {
-    background: #0E7C7B;
+    background: #3ab5b4;
     transform: translateY(-3px);
   }
 

@@ -16,10 +16,10 @@ const platforms = [
       "A compact analyser and single-use cassette that screen for a broad panel of conditions from a few drops of blood—in minutes, without a laboratory. On-device AI interprets results in real time while secure cloud connectivity supports population-health insights.",
 
     features: [
-      "Broad multiplex panels spanning infectious, inflammatory and oncology-relevant markers in a single test.",
-      "Colorimetric & spectral sensing combined with machine-learning interpretation.",
-      "Battery-operable, field-ready design with no cold chain requirement.",
-      "Built for primary care, public-health screening and community outreach."
+      "Strategic multiplex panels covering infectious, inflammatory, cardiac, allergy, and oncology markers designed for high - impact, actionable diagnostics.",
+      "AI-powered multimodal sensing combining optical, spectral and electrochemical technologies to enable rapid, scalable multiplex diagnostics.",
+      "Field-ready by design battery-operable, no cold chain, minimal training required.",
+      "Built for scale primary care, public-health screening, and community outreach.",
     ],
 
     market: [
@@ -42,16 +42,16 @@ const platforms = [
     type: "therapeutics",
     tag: "Platform 02 · Therapeutics",
     title: "Antibody & ADC Therapeutics",
-    subtitle: "mAbs · ADCs · Bispecifics",
+    subtitle: "mAbs · Antibody–drug conjugates · Bispecifics",
 
     description:
-      "A precision-oncology pipeline engineering antibodies to target solid tumours with greater accuracy and a wider therapeutic window, including a differentiated low-dose, locally delivered ADC approach designed to reduce systemic toxicity.",
+      "A precision-oncology pipeline engineering antibodies to hit solid-tumour targets with greater accuracy and a wider therapeutic window including a differentiated low-dose, locally delivered ADC approach designed to reduce systemic toxicity.",
 
     features: [
-      "Monoclonal antibodies against validated oncology targets.",
-      "Novel antibody-drug conjugate platform.",
-      "Bispecific antibodies for enhanced immune engagement.",
-      "Focused on solid tumours with strong clinical translation."
+      "Monoclonal antibodies against validated oncology targets, with an affordability first development pathway.",
+      "Advanced Antibody–drug conjugates (ADCs) combining established and next-generation linker-payload chemistry with localized, low-dose delivery for precision cancer therapy.",
+      "Bispecific formats directed at the tumour microenvironment for enhanced immune engagement.",
+      "Focus areas solid tumours with high regional burden and clear paths to clinical translation."
     ],
 
     market: [

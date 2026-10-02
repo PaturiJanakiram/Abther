@@ -67,7 +67,8 @@ export default function Pipeline() {
           </h2>
 
           <p>
-            A platform-driven portfolio spanning rapid diagnostics and precision therapeutics — engineered to grow from a common architecture.
+            One platform. Multiple Diagnostics. Precision Therapeutics. <br />
+            A Portable Rapid Multiplex Diagnostics (PRMD). 
           </p>
 
         </div>

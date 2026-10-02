@@ -17,81 +17,123 @@ export default function ContactForm(){
 
     const data = {
       name: formData.get("name"),
+      Organisation: formData.get("Organisation"),      
       email: formData.get("email"),
-      organization: formData.get("organization"),
-      subject: formData.get("subject"),
+      phone: formData.get("phone"),
+      intrestedon: formData.get("intrestedon"),
       message: formData.get("message"),
     };
 
-    const response = await fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
-
-    const responseText = await response.text();
-
-    let result = {};
-
     try {
-      result = responseText ? JSON.parse(responseText) : {};
-    } catch (error) {
-      console.error("Invalid API response:", responseText);
-    }
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
 
-    if (response.ok) {
-      setStatus(result.message || "Message sent successfully!");
+      const responseText = await response.text();
+
+      let result = {};
+
+      try {
+        result = responseText ? JSON.parse(responseText) : {};
+      } catch (error) {
+        console.error("Invalid API response:", responseText);
+      }
+
+      if (!response.ok) {
+        throw new Error(
+          result.message || "Unable to send your message."
+        );
+      }
+
+      setStatus(
+        result.message || "Your message is sent securely to the AbTher team."
+      );
+
       form.reset();
-    } else {
-      setStatus(result.message || "Unable to send message.");
+    } catch (error) {
+      console.error("Contact form error:", error);
+
+      setStatus(
+        error.message || "Unable to send your message. Please try again."
+      );
+    } finally {
+      setIsSubmitting(false);
     }
-  }
+  };
 
     return (
       <form className="contact-form" onSubmit={handleSubmit}>
         <h3>Send us a message</h3>
 
         <div className="form-group">
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required
-          />
+          <span>
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+          </span>
+
+          <span>
+            <input
+              type="text"
+              name="Organisation"
+              placeholder="Company/Institution"
+              required
+            />
+          </span>
         </div>
 
         <div className="form-group">
           <input
             type="email"
             name="email"
-            placeholder="Email Address"
+            placeholder="you@example.com"
             required
           />
         </div>
-
         <div className="form-group">
           <input
-            type="text"
-            name="organization"
-            placeholder="Organization"
+            type="phone"
+            name="phone"
+            placeholder="please enter your 10 digit mobile number"
+            required
+            maxLength="10"
+            pattern="[0-9]{10}"
+            inputMode="numeric"
           />
-        </div>
+        </div> 
 
         <div className="form-group">
-          <input
-            type="text"
-            name="subject"
-            placeholder="Subject"
-          />
+          <select
+            name="intrestedon"
+            required
+            defaultValue=""
+            className="form-control"
+          >
+            <option value="" disabled>
+              Select
+            </option>
+            <option value="Investment">Investment</option>
+            <option value="Strategic partnership">Strategic partnership</option>
+            <option value="Grants and collaboration">Grants and collaboration</option>
+            <option value="Clinical or research collaboration">
+              Clinical or research collaboration
+            </option>
+            <option value="Other">Other</option>
+          </select>
         </div>
 
         <div className="form-group">
           <textarea
-            name="message"
+            name="Message"
             rows="6"
-            placeholder="Your Message"
+            placeholder="Tell us a little about your interest"
             required
           />
         </div>
@@ -103,13 +145,15 @@ export default function ContactForm(){
         >
           {isSubmitting ? "Sending..." : "Send Message"}
           {!isSubmitting && <Send size={18} />}
-        </button>
-
+        </button>       
         {status && (
           <p className="contact-status">
             {status}
           </p>
         )}
+        <p style={{ color: "white",fontSize:"small" }}>
+          Your message is sent securely to the AbTher team.
+        </p>
       </form>
     );
   }

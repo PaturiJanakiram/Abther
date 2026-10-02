@@ -26,13 +26,12 @@ export default async function handler(req, res) {
       replyTo: email,
       subject: `New Contact Form Submission - ${name}`,
       text: `
-Name: ${name}
-Email: ${email}
-Phone: ${phone}
-
-Message:
-${message}
-      `,
+      Name: ${name}
+      Organisation:${Organisation}
+      Email: ${email}
+      Phone: ${phone}
+      intrestedon:${intrestedon}
+      Message:${message}`,
     });
 
     return res.status(200).json({
