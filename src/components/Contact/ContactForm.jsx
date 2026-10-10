@@ -93,7 +93,7 @@ export default function ContactForm(){
           <input
             type="email"
             name="email"
-            placeholder="you@example.com"
+            placeholder="please enter your email address"
             required
           />
         </div>

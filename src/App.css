@@ -61,8 +61,8 @@
 }
 
 .page-section {
-  scroll-margin-top: calc(var(--header-height) + 20px);
-  padding: 20px 0px;
+  scroll-margin-top: calc(var(--header-height) + 0px);
+  padding: 10px 0px;
 }
 
 /* ==========================================

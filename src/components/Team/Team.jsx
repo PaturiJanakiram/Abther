@@ -128,19 +128,17 @@ const founder = {
   name: "Dr. Chiranjeevi Bodda",
   role: "Founder & Chief Executive Officer",
   about: [
-    "Dr. Chiranjeevi Bodda is the founder and CEO of AbTher Biotech, with more than 16 years of international research and development experience spanning cancer therapeutics, immuno-oncology, virology and neurological disease.",
-
-    "He has held leadership and senior scientific roles in the European biopharmaceutical sector, building expertise in companion diagnostics, drug discovery, translational medicine and preclinical-to-clinical development, including regulatory experience with first-in-human studies. His early research foundations were built at the Indian Institute of Science (IISc), Bangalore.",
-
-    "He conceived AbTher's multiplex diagnostic platform and leads its execution, driving the company's mission to deliver affordable, rapid and accessible healthcare for underserved communities worldwide."
-  ],
+    "Dr. Chiranjeevi Bodda, EMBA, is the founder and CEO of AbTher, with more than 17+ years of international research and development experience spanning cancer therapeutics, immuno-oncology, virology, and neurological disease.",
+    "He earned his Doctorate in University of Gottingen (Germany) and went on to hold research and leadership roles across the University of Oxford (UK), Aarhus University (Denmark), VUB (Belgium), Pure Biologics (Poland), and Genmab (the Netherlands) building deep expertise in antibody engineering, companion diagnostics, drug discovery, translational medicine, and preclinical-to-clinical development, including hands-on experience with IND filings and first-in-human studies. His early research foundations were built at the Indian Institute of Science (IISc), Bangalore.",
+    "His work has been published in high-impact-factor international journals. Today he channels that global scientific depth into AbTher's mission conceiving its multiplex diagnostic platform and leading its execution to deliver affordable, rapid, and accessible healthcare for underserved communities worldwide."],
 
   credentials: [
-    "Ph.D. – University of Göttingen",
+    "Ph.D. - Germany",
     "Executive MBA",
-    "16+ Years International R&D",
-    "Antibody & ADC Expertise",
-    "Published in Leading Journals"
+    "Oxford · Denmark · Belgium · Poland · Netherlands",
+    "17+ years international R&D",
+    "Antibody & ADC · IND filings",
+    "High-impact journal publications"
   ]
 };
 

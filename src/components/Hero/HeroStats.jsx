@@ -4,7 +4,7 @@ const HeroStats = () => {
 
         {
             number: "40+",
-            title: "Diseases screened from a few drops of blood"
+            title: "Diseases screened from micro blood sample"
         },
 
         {

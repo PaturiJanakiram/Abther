@@ -62,6 +62,7 @@
   align-items: stretch;
   justify-content: center;
   overflow: hidden;
+  position:relative;
 }
 
   .founder-image img {
@@ -73,6 +74,28 @@
     object-position: center;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    object-fit: cover;
+  }
+.founder-image-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
+  /*background: linear-gradient( to top, rgba(0, 0, 0, 0.8), transparent );*/
+}
+
+  .founder-image-content h3 {
+    margin: 0 0 5px;
+    font-size: 22px;
+  }
+
+  .founder-image-content h5 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
   }
 
 		.founder-image img:hover {
@@ -103,13 +126,14 @@ founder-content
   text-align: left;
 }
 
-.founder-content h3 {
+.founder-image-content h3 {
   font-size: 42px;
   color: #0A2540;
   margin-bottom: 10px;
   font-family: "Fraunces",serif;
   text-align: left;
   padding: 0;
+  color:white;
 }
 
 .founder-content h5 {
@@ -138,8 +162,9 @@ founder-content
 .credential-grid {
 	display: grid;
 	grid-template-columns: repeat(2,1fr);
-	gap: 18px;
+	gap: 10px;
 	margin-top: 35px;
+  font-size:small;
 }
 
 .credential-card {
@@ -626,6 +651,10 @@ founder-content
     font-size: 11px;
   }
 
+  .founder-image-content h3 {
+    font-size: 25px;
+  }
+
 	.founder-content h3 {
 		font-size: 28px;
 	}
@@ -634,9 +663,9 @@ founder-content
 		border-radius: 20px;        
 	}
 
-	.credential-card {
-		padding: 16px;
-	}
+  .credential-card {
+    padding: 16px;
+  }
 
 	.disc-card {
 		padding: 28px 20px;

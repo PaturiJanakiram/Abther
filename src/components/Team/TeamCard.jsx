@@ -5,25 +5,22 @@ import founderImage from "../../images/team/founder.JPG";
 const TeamCard = ({ founder }) => {
   return (
     <div className="founder-card">
-
-      <div className="founder-image">
-
+      <div className="founder-image">      
         <img
           src={founderImage}
           alt={founder.name}
         />
-
+        <div className="founder-image-content">
+          <h3>{founder.name}</h3>
+          <h5>{founder.role}</h5>
+        </div>
       </div>
 
       <div className="founder-content">
 
         <span className="leader-tag">
-          Founder & CEO
-        </span>
-
-        <h3>{founder.name}</h3>
-
-        <h5>{founder.role}</h5>
+          About the founder
+        </span>       
 
         {founder.about.map((paragraph, index) => (
           <p key={index}>{paragraph}</p>
@@ -33,15 +30,11 @@ const TeamCard = ({ founder }) => {
 
           {founder.credentials.map((item, index) => (
 
-            <div
-              key={index}
-              className="credential-card"
-            >
+            <div  key={index}       className="credential-card" >
 
               {index === 0 && <GraduationCap size={20} />}
               {index === 1 && <Briefcase size={20} />}
               {index >= 2 && <Award size={20} />}
-
               <span>{item}</span>
 
             </div>

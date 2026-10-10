@@ -3,37 +3,37 @@ import "./Pipeline.css";
 const comparisons = [
   {
     Pipeline: "Diagnostics",
-    Platform: "PRIP™ Optical",
+    Platform: "PRMD Optical",
     Application: "AUFI / Infectious Diseases",
-    Stage: "Lead / Validation"
+    Stage: "Validation"
   },
   {
     Pipeline: "Diagnostics",
-    Platform: "PRIP™ Optical",
+    Platform: "PRMD Optical",
     Application: "Cancer Biomarkers",
-    Stage: "Expansion"
+    Stage: "Expansion / Validation"
   },
   {
     Pipeline: "Diagnostics",
-    Platform: "PRIP™ Electrochemical",
+    Platform: "PRMD Electrochemical",
     Application: "Detection",
-    Stage: "Lead / Validation"
+    Stage: "Validation"
   },
   {
     Pipeline: "Diagnostics",
-    Platform: "PRIP™ Electrochemical",
+    Platform: "PRMD Electrochemical",
     Application: "Multiplex Biomarkers",
-    Stage: "Development"
+    Stage: "Lead"
   },
   {
     Pipeline: "Diagnostics",
-    Platform: "PRIP™",
+    Platform: "PRMD",
     Application: "Cardiac / Neuro / Autoimmune",
-    Stage: "Expansion / Discovery"
-  },
+    Stage: "Discovery"
+  },  
   {
     Pipeline: "Therapeutics",
-    Platform: "Novel ISAC™",
+    Platform: "Novel ISAC",
     Application: "Targeted Immunotherapy",
     Stage: "Discovery / Preclinical"
   },
@@ -79,15 +79,15 @@ export default function Pipeline() {
 
             <thead>
               <tr>
-                <th>Capability</th>
+                <th>Pipeline</th>
                 <th className="pipeline-highlight">
-                  AbTher MxDx
+                  Platform
                 </th>
                 <th>
-                  Central-lab immunoassay / PCR
+                  Application
                 </th>
                 <th>
-                  Single-analyte rapid tests
+                  Stage
                 </th>
               </tr>
             </thead>

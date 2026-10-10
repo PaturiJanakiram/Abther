@@ -21,7 +21,7 @@ const FloatingCards = () => {
                 <FiSun />
               </div>              
               <div className="floating-content">
-                    <h4>AI Powered</h4>
+                    <h4>AI-guided</h4>
                     <p>Analysis</p>
               </div>
             </div>
@@ -31,8 +31,8 @@ const FloatingCards = () => {
                 <FiActivity />
               </div>
               <div className="floating-content">
-                    <h4>40+ Panels</h4>
-                    <p>One Sample</p>
+                    <h4>40+ Diseases</h4>
+                    <p>Multiplex panels</p>
                </div>
 
             </div>

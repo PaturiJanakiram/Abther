@@ -45,9 +45,9 @@ function App() {
 
         <section id="investors" className="page-section"><Investors /></section>
 
-        <section id="contact" className="page-section"><Contact /></section>
+        <section id="contact" className="page-section"><Contact /> <Footer /></section>
 
-        <Footer/>
+       
       
   
            
