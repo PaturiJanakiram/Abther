@@ -50,7 +50,17 @@ const Hero = () => {
 
                 </div>
 
-            </div>
+        </div>
+       
+        <div class="trust">
+          <div class="trust-inner">           
+            <p class="trust-item">  <span className="tick-mark">✓</span>Recognised &amp; aligned with</p>
+            <p class="trust-item">  <span className="tick-mark">✓</span>Startup India · DPIIT</p>
+            <p class="trust-item">  <span className="tick-mark">✓</span>National research grant frameworks</p>
+            <p class="trust-item">  <span className="tick-mark">✓</span>Regulatory-ready (CDSCO · CE · FDA pathways)</p>
+            <div><p><span className="tick-mark">✓</span>Academic &amp; clinical research network</p></div>           
+          </div>
+        </div>
         </section>
     );
 };
