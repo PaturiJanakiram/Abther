@@ -17,11 +17,7 @@ import Adv12 from "../../images/team/Adv12.png";
 
 const disciplines = [
   {
-    name: "Molecular Diagnostics",
-    icon: Microscope
-  },
-  {
-    name: "Antibody Engineering",
+    name: "Engineering / Electronics",
     icon: Dna
   },
   {
@@ -29,15 +25,19 @@ const disciplines = [
     icon: BrainCircuit
   },
   {
-    name: "Clinical Research",
+    name: "Molecular Diagnostics",
+    icon: Microscope
+  }, 
+  {
+    name: "Clinical Projects",
     icon: Stethoscope
   },
   {
-    name: "IP & Regulatory",
+    name: "Regulatory",
     icon: FileCheck
   },
   {
-    name: "Commercial & Partnerships",
+    name: "Operations / Manufacturing",
     icon: Handshake
   }
 ];
@@ -46,26 +46,22 @@ const advisors = [
   {
     adv: Adv1,
     name: "Prof. D. Narasimha Rao",
-    role:
-      "Honorary Professor, Indian Institute of Science (IISc), Bangalore — molecular biology & biochemistry"
+    role:  "Honorary Professor, (Indian Institute of Science, IISc, Bangalore) molecular biology & biochemistry"
   },
   {
     adv: Adv2,
     name: "Dr. Madhusoodanan U. K.",
-    role:
-      "Sree Chitra Tirunal Institute for Medical Sciences & Technology (SCTIMST) — medical diagnostics research"
+    role: "Associate Professor, (Sree Chitra Tirunal Institute for Medical Sciences & Technology, SCTIMST) medical diagnostics research"
   },
   {
     adv: Adv3,
     name: "Dr. Ramarao",
-    role:
-      "Central University of Tamil Nadu (CUTN) — research sciences & co-investigator"
+    role: "Central University of Tamil Nadu (CUTN) infectious diseases, molecular toxicology & pharmacology, and analytical biochemistry"
   },
   {
     adv: Adv4,
     name: "Dr. Manashjit Gogoi",
-    role:
-      "Department of Biomedical Engineering, North-Eastern Hill University (NEHU) — bionanotechnology, biosensors & magnetic nanoparticles"
+    role: "Department of Biomedical Engineering, North-Eastern Hill University (NEHU) bio nanotechnology, biosensors & magnetic nanoparticles"
   }
 ];
 
@@ -73,26 +69,22 @@ const advisors1 = [
   {
     adv: Adv5,
     name: "Dr. Karolina Can",
-    role:
-      "Clinical Development & Clinical Trials"
+    role: "Clinical Development & Clinical Trials (Germany, Poland)"
   },
   {
     adv: Adv6,
     name: "Dr. V. Ajay Narendra T",
-    role:
-      "Neurodiagnostics & Disease Strategy"
+    role: "Neuro diagnostics & Disease Strategy (Germany, USA)"
   },
   {
     adv: Adv7,
     name: "Dr. Krishna P",
-    role:
-      "Molecular Diagnostics & Clinical Chemistry"
+    role: "Molecular Diagnostics & Clinical Chemistry (Germany)"
   },
   {
     adv: Adv8,
     name: "Dr. Priya Raju",
-    role:
-      "IP & Regulatory Affairs"
+    role: "IP & Regulatory Affairs (Germany, France)"
   }
 ];
 
@@ -100,26 +92,22 @@ const advisors2 = [
   {
     adv: Adv9,
     name: "Mr. Vasu Dev G",
-    role:
-      "Business & Commercial Strategist — leads go-to-market strategy, commercial operations, partnerships, and revenue model design, translating AbTher's science into a scalable, sustainable business."
+    role: "Business & Commercial Strategist leads go-to-market strategy, commercial operations, partnerships, and revenue model design, translating AbTher's science into a scalable, sustainable business."
   },
   {
     adv: Adv10,
     name: "Ms. Santoshi Bhargavi B",
-    role:
-      "Business Development & Customer Engagement — drives strategic partnerships, client relationships, and market outreach across healthcare and institutional channels."
+    role: "Business Development & Customer Engagement drives strategic partnerships, client relationships, and market outreach across healthcare and institutional channels."
   },
   {
     adv: Adv11,
     name: "Prof. V. R. Reddy",
-    role:
-      "Andhra University — strategic marketing & market development"
+    role: "Strategic marketing & market development (Andhra University)"
   },
   {
     adv: Adv12,
     name: "Prof. Arun Kumar",
-    role:
-      "Andhra University — market intelligence & commercial strategy"
+    role: "Market intelligence & commercial strategy (Andhra University)"
   }
 ];
 
@@ -168,7 +156,7 @@ export default function Team() {
         <TeamCard founder={founder} />
         <div className="team-strip">
           <h4>
-            A multidisciplinary team across every discipline we need
+            Core Execution Team
           </h4>
           <div className="disc-grid">
             {disciplines.map((item, index) => {

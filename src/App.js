@@ -8,19 +8,11 @@ import HowItWorks from "./components/HowItWorks/HowItWorks";
 import Impact from "./components/Impact/Impact";
 import Team from "./components/Team/Team";
 import Inspiration from "./components/Inspiration/Inspiration";
+import Sustainability from "./components/Sustainability/Sustainability";
 import Investors from "./components/Investors/Investors";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
-
-
-
-
-
-
-
-
-
 
 function App() {
     return (
@@ -43,16 +35,12 @@ function App() {
 
         <section id="inspiration" className="page-section"> <Inspiration /></section>
 
+        <section id="sustainability" className="sustainability-section"> <Sustainability /></section>        
+
         <section id="investors" className="page-section"><Investors /></section>
-
+         
         <section id="contact" className="page-section"><Contact /> <Footer /></section>
-
-       
-      
-  
-           
-
-           
+          
         </>
       
   );

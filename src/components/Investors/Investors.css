@@ -44,10 +44,10 @@
 
 .investor-grid {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 30px;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
   margin-top: 60px;
-  margin-bottom: 90px;
+  margin-bottom: 60px;
 }
 
 
@@ -59,9 +59,10 @@
   position: relative;
   overflow: hidden;
   border-radius: 22px;
-  padding: 40px;
+  padding-left: 5px;
+  padding-top: 5px;
   transition: .35s;
-  min-height: 250px;
+  height: 250px;
 }
 
   .investor-card:hover {
@@ -74,15 +75,15 @@
 
   .investor-card.dark {
     background: #0A2540;
-    color: #fff;
+    color: #fff;   
   }
 
     .investor-card.dark h3,
     .investor-card.dark p,
     .investor-card.dark .investor-label {
       color: #fff;
+      padding:0;
     }
-
 
   /* TEAL */
 
@@ -95,6 +96,7 @@
     .investor-card.teal p,
     .investor-card.teal .investor-label {
       color: #fff;
+      padding: 0;
     }
 
 
@@ -114,14 +116,16 @@
 
 
   /* WHITE */
-
   .investor-card.plain {
-    background: #fff;
-    border: 1px solid #E5EAF1;
+    background: #18a50d9e;
+  }
+
+  .investor-card.plain h3 {    
+    color: #36485B;
   }
 
     .investor-card.plain:hover {
-      border-color: #0E7C7B;
+      border-color: #0E7C7B;      
     }
 
 
@@ -170,7 +174,7 @@
   background: #fff;
   border: 1px solid #E5EAF1;
   border-radius: 20px;
-  padding: 28px 35px;
+  padding: 12px 25px;
   transition: .35s;
 }
 

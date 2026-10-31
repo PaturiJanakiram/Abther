@@ -8,13 +8,10 @@ const InvestorCard = ({
 }) => {
   return (
     <div className={`investor-card ${theme}`}>
-
       <span className="investor-label">
         {label}
       </span>
-
       <h3>{value}</h3>
-
       <p>{description}</p>
 
     </div>
